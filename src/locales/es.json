@@ -2,6 +2,7 @@
     "nav": {
         "home": "Inicio",
         "services": "Servicios",
+        "catalog": "Catálogo",
         "about": "Nosotros",
         "portfolio": "Portafolio",
         "automation": "Automatización",

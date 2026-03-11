@@ -17,6 +17,7 @@ const Navbar = () => {
   const navLinks = [
     { name: t("nav.home"), path: "/" },
     { name: t("nav.services"), path: "/services" },
+    { name: t("nav.catalog"), path: "https://catalog.companycasuals.com/", isExternal: true },
     { name: t("nav.about"), path: "/about" },
     { name: t("nav.portfolio"), path: "/portfolio" },
     { name: t("nav.automation"), path: "/automation" },
@@ -33,14 +34,26 @@ const Navbar = () => {
         {/* Desktop */}
         <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === link.path ? "text-primary" : "text-foreground"
-                }`}
-            >
-              {link.name}
-            </Link>
+            link.isExternal ? (
+              <a
+                key={link.path}
+                href={link.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`text-sm font-medium transition-colors hover:text-primary text-foreground`}
+              >
+                {link.name}
+              </a>
+            ) : (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === link.path ? "text-primary" : "text-foreground"
+                  }`}
+              >
+                {link.name}
+              </Link>
+            )
           ))}
 
           <Button
@@ -83,15 +96,28 @@ const Navbar = () => {
       {isOpen && (
         <div className="lg:hidden bg-background border-b border-border px-6 pb-4">
           {navLinks.map((link) => (
-            <Link
-              key={link.path}
-              to={link.path}
-              className={`block py-3 text-sm font-medium transition-colors hover:text-primary ${location.pathname === link.path ? "text-primary" : "text-foreground"
-                }`}
-              onClick={() => setIsOpen(false)}
-            >
-              {link.name}
-            </Link>
+            link.isExternal ? (
+              <a
+                key={link.path}
+                href={link.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block py-3 text-sm font-medium transition-colors hover:text-primary text-foreground`}
+                onClick={() => setIsOpen(false)}
+              >
+                {link.name}
+              </a>
+            ) : (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`block py-3 text-sm font-medium transition-colors hover:text-primary ${location.pathname === link.path ? "text-primary" : "text-foreground"
+                  }`}
+                onClick={() => setIsOpen(false)}
+              >
+                {link.name}
+              </Link>
+            )
           ))}
           <Button asChild className="w-full mt-2">
             <Link to="/contact" onClick={() => setIsOpen(false)}>

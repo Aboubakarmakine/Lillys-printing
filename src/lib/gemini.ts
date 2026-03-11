@@ -1,8 +1,5 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
-
+// Direct REST API implementation to bypass SDK issues
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-
-const genAI = new GoogleGenerativeAI(API_KEY || "dummy-key");
 
 const systemPrompt = `
 You are a friendly, helpful team member at Lilly's Printing (WS Consulting Solution).
@@ -83,32 +80,48 @@ export const getGeminiResponse = async (history: { role: "user" | "model"; parts
     }
 
     try {
-        // Use gemini-2.0-flash as it is available for this key
-        const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
-
-        // Construct chat history with system prompt context
-        const chat = model.startChat({
-            history: [
-                {
-                    role: "user",
-                    parts: [{ text: systemPrompt }],
+        // Use v1 API endpoint directly (Stable)
+        const response = await fetch(
+            `https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent?key=${API_KEY}`,
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
                 },
-                {
-                    role: "model",
-                    parts: [{ text: "Understood. I am ready to assist as Lilly's Printing AI." }],
-                },
-                ...history.map(msg => ({
-                    role: msg.role === "model" ? "model" : "user",
-                    parts: [{ text: msg.parts }],
-                })),
-            ],
-        });
+                body: JSON.stringify({
+                    contents: [
+                        {
+                            role: "user",
+                            parts: [{ text: systemPrompt }]
+                        },
+                        {
+                            role: "model",
+                            parts: [{ text: "Understood. I am ready to assist as Lilly's Printing AI." }]
+                        },
+                        ...history.map(msg => ({
+                            role: msg.role === "model" ? "model" : "user",
+                            parts: [{ text: msg.parts }]
+                        })),
+                        {
+                            role: "user",
+                            parts: [{ text: message }]
+                        }
+                    ]
+                })
+            }
+        );
 
-        const result = await chat.sendMessage(message);
-        const response = await result.response;
-        return response.text();
-    } catch (error) {
-        console.error("Gemini API Error Details:", error);
-        return "I'm having trouble connecting to the server right now. Please try again later or call us directly.";
+        if (!response.ok) {
+            const errorData = await response.json();
+            console.error("Gemini API Error:", errorData);
+            throw new Error(JSON.stringify(errorData));
+        }
+
+        const data = await response.json();
+        return data.candidates[0].content.parts[0].text;
+
+    } catch (error: any) {
+        console.error("Gemini API Request Failed:", error);
+        throw error; // Re-throw to be caught by ChatWidget
     }
 };

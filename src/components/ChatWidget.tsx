@@ -39,8 +39,15 @@ const ChatWidget = () => {
         userMessage
       );
       setMessages((prev) => [...prev, { role: "model", parts: response }]);
-    } catch (error) {
-      setMessages((prev) => [...prev, { role: "model", parts: "Sorry, I'm having trouble connecting right now." }]);
+    } catch (error: any) {
+      console.error("Chat Error:", error);
+      let errorMessage = "Sorry, I'm having trouble connecting right now.";
+
+      if (error.message?.includes("429") || error.toString().includes("429")) {
+        errorMessage = "I'm receiving too many messages right now. Please wait 1 minute and try again. (Free tier limit reached)";
+      }
+
+      setMessages((prev) => [...prev, { role: "model", parts: errorMessage }]);
     } finally {
       setIsLoading(false);
     }
