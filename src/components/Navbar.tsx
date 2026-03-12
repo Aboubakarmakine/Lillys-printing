@@ -48,8 +48,9 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname === link.path ? "text-primary" : "text-foreground"
-                  }`}
+                className={`text-sm font-medium transition-colors hover:text-primary ${
+                  location.pathname === link.path ? "text-primary" : "text-foreground"
+                }`}
               >
                 {link.name}
               </Link>
@@ -111,8 +112,9 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`block py-3 text-sm font-medium transition-colors hover:text-primary ${location.pathname === link.path ? "text-primary" : "text-foreground"
-                  }`}
+                className={`block py-3 text-sm font-medium transition-colors hover:text-primary ${
+                  location.pathname === link.path ? "text-primary" : "text-foreground"
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}

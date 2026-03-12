@@ -1,58 +1,46 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import FadeIn from "@/components/FadeIn";
-import { Printer, Shirt, Monitor, CarFront } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { ScrambledText } from "@/components/ScrambledText";
+import { ParticleNetwork } from "@/components/ParticleNetwork";
 
 const HeroSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-20 lg:py-32 bg-background overflow-hidden relative">
-      <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <FadeIn>
-            <h1 className="text-4xl lg:text-6xl font-heading font-bold text-foreground leading-tight">
-              {t("hero.title")}{" "}
-              <span className="text-primary block">{t("hero.subtitle")}</span>
+    <section 
+      className="py-20 lg:py-32 bg-background overflow-hidden relative bg-cover bg-center"
+      style={{ backgroundImage: 'url(/hero-bg-2.png)' }}
+    >
+      <div className="absolute inset-0 bg-black/60 z-0"></div>
+      <ParticleNetwork />
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="flex flex-col items-center justify-center text-center min-h-[50vh]">
+          <FadeIn className="flex flex-col items-center">
+            <h1 className="text-4xl lg:text-7xl font-heading font-bold text-white leading-tight max-w-4xl mx-auto">
+              <ScrambledText text={t("hero.title")} delay={0.2} />{" "}
+              <span className="text-red-600 block mt-2 drop-shadow-md">
+                <ScrambledText text={t("hero.subtitle")} delay={0.8} />
+              </span>
             </h1>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-lg">
+            <p className="mt-8 text-xl text-white/90 leading-relaxed max-w-2xl mx-auto">
               {t("hero.description")}
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Button asChild size="lg" className="text-base px-8 h-12">
+            <div className="mt-10 flex flex-wrap justify-center gap-6">
+              <Button asChild size="lg" className="text-lg px-10 h-14 shadow-xl bg-red-600 hover:bg-red-700 text-white border-0">
                 <Link to="/contact">{t("hero.cta_quote")}</Link>
               </Button>
               <Button
                 asChild
                 variant="outline"
                 size="lg"
-                className="text-base px-8 h-12 border-foreground text-foreground hover:bg-foreground hover:text-background"
+                className="text-lg px-10 h-14 border-white text-white hover:bg-white hover:text-black bg-transparent border-2"
               >
                 <Link to="/services">{t("hero.cta_services")}</Link>
               </Button>
             </div>
           </FadeIn>
-
-          <div className="grid grid-cols-2 gap-4 relative z-50">
-            {[
-              { icon: Shirt, label: t("services.apparel"), path: "/services" },
-              { icon: Monitor, label: t("services.digital"), path: "/services" },
-              { icon: CarFront, label: t("services.wraps"), path: "/services" },
-              { icon: Printer, label: t("services.print"), path: "/services" },
-            ].map((item) => (
-              <Link
-                key={item.label}
-                to={item.path}
-                className="bg-secondary rounded-lg p-8 flex flex-col items-center justify-center gap-3 aspect-square hover:bg-secondary/80 hover:scale-105 transition-all duration-300 cursor-pointer shadow-sm hover:shadow-md relative z-20 pointer-events-auto"
-              >
-                <item.icon size={40} className="text-primary" />
-                <p className="text-sm font-medium text-foreground text-center">
-                  {item.label}
-                </p>
-              </Link>
-            ))}
-          </div>
         </div>
       </div>
     </section>

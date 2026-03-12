@@ -5,7 +5,7 @@
         "catalog": "Catalog",
         "about": "About",
         "portfolio": "Portfolio",
-        "automation": "Automation",
+        "automation": "Atlas",
         "contact": "Contact",
         "quote": "Request a Quote"
     },
@@ -41,74 +41,86 @@
         "hours_sat": "Sat: 9AM – 2PM"
     },
     "services_page": {
-        "title": "Our Services",
-        "subtitle": "Comprehensive printing solutions engineered for businesses that demand excellence.",
-        "process": "Our Process",
-        "benefits": "Benefits",
-        "get_quote": "Get a Quote",
+        "title": "Premium Capabilities",
+        "subtitle": "Bespoke printing and digital solutions engineered for brands that demand absolute excellence.",
+        "process": "Our Methodology",
+        "benefits": "Key Advantages",
+        "get_quote": "Request Consultation",
+        "logo": {
+            "title": "Logo Design",
+            "desc": "A powerful logo is the cornerstone of your brand's identity—the definitive emblem that connects you with your audience and distinguishes you in a competitive marketplace. At Lilly's Printing, we engineer bespoke, high-impact branding solutions built on over a decade of industry expertise. Since 2010, we have cultivated a reputation for design excellence through an unwavering commitment to our clients' strategic vision. Our methodology is immersive: we analyze your underlying objectives, mission, and long-term goals to craft a sophisticated visual identity that precisely reflects your corporate DNA. Trust our dedicated design architects to deliver an iconic, enduring mark that commands attention and accelerates your business growth."
+        },
+        "storefront": {
+            "title": "Storefront & Wall Wraps",
+            "desc": "While here at Lilly's Printing, we're known for our professional vehicle wraps, we also produce custom, high-quality office signage and storefront graphics tailored specifically to your business. You can depend on us to create commercial signage including exterior signs and even elevator wraps and floor wraps. Stand out in a crowded marketplace with graphics and signage and that really grab people's attention!"
+        },
         "wraps": {
-            "title": "Large Format Printing & Wraps",
-            "desc": "Dominate the road and the street. From full vehicle fleets to storefront windows and wall murals, we turn any surface into a premium advertising space.",
+            "title": "Custom Promotional Merchandise",
+            "desc": "Curated, high-quality promotional merchandise designed to leave a lasting impression. We provide bespoke branded goods that cultivate unparalleled brand loyalty.",
             "process": [
-                "Custom Design & Templates",
-                "Cars, Trucks, Vans & Food Trucks",
-                "Storefront & Wall Wraps",
-                "Professional Installation"
+                "Premium Item Sourcing",
+                "Brand Architecture Alignment",
+                "Custom Fabrication",
+                "Quality Assurance"
             ],
             "benefits": [
-                "Mobile Billboards (Thousands of impressions)",
-                "Protects Vehicle Paint",
-                "High-Durability Vinyl",
-                "5-7 Year Lifespan"
+                "Unforgettable Brand Recall",
+                "Premium Material Selection",
+                "Scalable Procurement",
+                "Rapid Turnaround Times"
             ]
         },
         "apparel": {
-            "title": "Apparel & Promotional Products",
-            "desc": "Build team unity and brand loyalty. We offer high-quality embroidery, screen printing, and a vast range of promotional items like mugs, pens, and bags.",
+            "title": "Premium Branded Apparel",
+            "desc": "Cultivate corporate identity and team unity. We provide premium embroidery, advanced screen printing, and bespoke corporate wear built to last.",
             "process": [
-                "Uniforms & Corporate Apparel",
-                "T-Shirt Screen Printing",
-                "Embroidery Services",
-                "Promotional Merchandise (Mugs, Pens)"
+                "Corporate Apparel Sourcing",
+                "Advanced Screen Printing",
+                "Precision Embroidery",
+                "Garment Detailing"
             ],
             "benefits": [
-                "Premium Garment Brands",
-                "Long-Lasting Prints",
-                "Bulk Order Discounts",
-                "Fast Production"
+                "Luxury Garment Selection",
+                "Fade-Resistant Inks",
+                "Scalable Fulfillment",
+                "Precision Stitching"
             ]
         },
         "digital": {
-            "title": "Brand Identity & Digital Solutions",
-            "desc": "Your brand is more than a logo. We offer full-service design packages including logo creation, flyer design, social media management, and web design.",
+            "title": "Digital & Social Media Marketing",
+            "desc": "Your brand is a living ecosystem. We deliver strategic digital marketing and social media management designed to elevate your brand perception and drive measurable growth.",
             "process": [
-                "Logo & Identity Design",
-                "Flyer & Brochure Design",
-                "Web Design & Development",
-                "Social Media Management"
+                "Strategic Content Architecture",
+                "Audience Engagement Modeling",
+                "Campaign Deployment",
+                "Performance Analytics"
             ],
             "benefits": [
-                "Modern, Professional Esthetic",
-                "Cohesive Brand Voice",
-                "Mobile-Optimized Websites",
-                "Increased Online Engagement"
+                "Elevated Brand Perception",
+                "Targeted Demographic Reach",
+                "Maximized Conversion Rates",
+                "Measurable Digital Growth"
             ]
         },
         "print": {
-            "title": "Commercial Printing",
-            "desc": "Essential business materials delivered with precision. Business cards, flyers, brochures, and stationery that leave a lasting impression.",
+            "title": "High-End Business Cards",
+            "desc": "Tangible assets crafted with absolute precision. We produce executive business cards and high-end stationery with specialty finishes that leave a definitive physical impression.",
             "process": [
-                "Business Cards & Stationaries",
-                "Flyers & Postcards",
-                "High-Volume Offset Printing",
-                "Finishing (Gloss, Matte, UV)"
+                "Executive Design Architecture",
+                "High-Fidelity Offset Printing",
+                "Specialty Finishes (Foil, Spot UV)",
+                "Precision Cutting"
             ],
             "benefits": [
-                "Same-Day Rush Available",
-                "Premium Paper Stocks",
-                "Vibrant Color Accuracy",
-                "Direct Mail Services"
+                "Accelerated Production Available",
+                "Luxury Paper Stocks",
+                "Flawless Color Calibration",
+                "Direct-to-Client Distribution"
             ]
+        },
+        "flyer": {
+            "title": "Flyer Design",
+            "desc": "Flyers have been around for years, as far as marketing is concerned. In the meantime, there have come and gone, several other types of marketing tools. But, a flyer is one of the few marketing tools, which has never gone out of trend. The reason why this ad-tool has survived all these years is its irresistible visual appeal and concise representation of messages. Lilly's Printing, a flyer design company offers attractive flyers that ensure the successful marketing of your offers, products and services in a cost-effective manner. Our expert flyer design services help you promote your business and announce events, exactly the way you want."
         }
     }
 }

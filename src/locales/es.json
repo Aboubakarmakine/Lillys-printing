@@ -5,7 +5,7 @@
         "catalog": "Catálogo",
         "about": "Nosotros",
         "portfolio": "Portafolio",
-        "automation": "Automatización",
+        "automation": "Atlas",
         "contact": "Contacto",
         "quote": "Solicitar Cotización"
     },
@@ -46,6 +46,10 @@
         "process": "Nuestro Proceso",
         "benefits": "Beneficios",
         "get_quote": "Obtener Cotización",
+        "logo": {
+            "title": "Diseño de Logotipos",
+            "desc": "Un logotipo poderoso es la piedra angular de la identidad de su marca: el emblema definitivo que lo conecta con su audiencia y lo distingue en un mercado competitivo. En Lilly's Printing, diseñamos soluciones de marca a medida y de alto impacto respaldadas por más de una década de experiencia en la industria. Desde 2010, hemos cultivado una reputación de excelencia en diseño a través de un compromiso inquebrantable con la visión estratégica de nuestros clientes. Nuestra metodología es inmersiva: analizamos sus objetivos fundamentales, misión y metas a largo plazo para crear una identidad visual sofisticada que refleje con precisión su ADN corporativo. Confíe en nuestros arquitectos de diseño dedicados para entregar una marca icónica y perdurable que capte la atención y acelere el crecimiento de su negocio."
+        },
         "wraps": {
             "title": "Impresión de Gran Formato y Rotulación",
             "desc": "Domina la carretera y la calle. Desde flotas de vehículos completas hasta escaparates y murales, convertimos cualquier superficie en un espacio publicitario premium.",

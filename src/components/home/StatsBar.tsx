@@ -1,11 +1,12 @@
 import FadeIn from "@/components/FadeIn";
 import { Clock, CheckCircle, Users, Zap } from "lucide-react";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 const stats = [
-  { icon: Clock, value: "10+", label: "Years Experience" },
-  { icon: CheckCircle, value: "5,000+", label: "Orders Completed" },
-  { icon: Users, value: "98%", label: "Client Satisfaction" },
-  { icon: Zap, value: "24–72hr", label: "Turnaround" },
+  { icon: Clock, value: 10, suffix: "+", label: "Years Experience" },
+  { icon: CheckCircle, value: 5000, suffix: "+", label: "Orders Completed" },
+  { icon: Users, value: 98, suffix: "%", label: "Client Satisfaction" },
+  { icon: Zap, value: 24, suffix: "h+", label: "Rapid Turnaround" },
 ];
 
 const StatsBar = () => {
@@ -17,7 +18,9 @@ const StatsBar = () => {
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <stat.icon size={24} className="mx-auto mb-3 text-primary" />
-                <p className="text-3xl font-heading font-bold">{stat.value}</p>
+                <p className="text-3xl font-heading font-bold text-white">
+                  <AnimatedCounter value={stat.value} suffix={stat.suffix} />
+                </p>
                 <p className="text-sm text-background/70 mt-1">{stat.label}</p>
               </div>
             ))}

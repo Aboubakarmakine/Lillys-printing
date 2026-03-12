@@ -1,32 +1,32 @@
 import { Link } from "react-router-dom";
-import { Printer, Shirt, CarFront, Monitor } from "lucide-react";
+import { Printer, Shirt, Package, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FadeIn from "@/components/FadeIn";
 
 const services = [
   {
-    icon: CarFront,
-    title: "Vehicle Wraps & Graphics",
-    description:
-      "Transform your fleet into mobile billboards with premium full/partial wraps for cars, trucks, and vans.",
-  },
-  {
-    icon: Monitor,
-    title: "Digital Business Solutions",
-    description:
-      "Custom websites, social media management, and logo design to build a powerful online presence.",
-  },
-  {
     icon: Shirt,
-    title: "Apparel & Merchandise",
+    title: "Premium Branded Apparel",
     description:
-      "High-quality embroidered uniforms and screen-printed gear that unites your team and promotes your brand.",
+      "Cultivate corporate identity with premium embroidery and advanced screen printing built to last.",
+  },
+  {
+    icon: Package,
+    title: "Custom Promotional Merchandise",
+    description:
+      "Curated, high-quality promotional merchandise designed to leave a lasting impression and cultivate brand loyalty.",
   },
   {
     icon: Printer,
-    title: "Print Marketing",
+    title: "High-End Business Cards",
     description:
-      "Business cards, flyers, and brochures printed with precision to leave a lasting professional impression.",
+      "Tangible assets crafted with absolute precision, featuring specialty finishes that leave a definitive physical impression.",
+  },
+  {
+    icon: Smartphone,
+    title: "Digital & Social Media Marketing",
+    description:
+      "Strategic digital presence and engaging content designed to elevate your brand perception and drive measurable growth.",
   },
 ];
 
@@ -37,11 +37,10 @@ const ServicesOverview = () => {
         <FadeIn>
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-heading font-bold text-foreground">
-              Our Services
+              Premium Capabilities
             </h2>
-            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive printing solutions designed for businesses that demand
-              quality, consistency, and reliability.
+            <p className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto">
+              Bespoke printing and digital solutions engineered for brands that demand absolute excellence.
             </p>
           </div>
         </FadeIn>

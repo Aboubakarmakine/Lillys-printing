@@ -7,40 +7,70 @@ const categories = ["All", "Vehicle Wraps", "Apparel", "Large Format", "Digital"
 
 const projects = [
   {
-    title: "EcoFleet Van Wrap",
+    title: "Commercial Van Route Wrap",
     category: "Vehicle Wraps",
-    image: "/service-wrap.png",
-    description: "Full fleet wrap implementation for local eco-friendly delivery service.",
+    image: "/van-wrap-1.jpg",
+    description: "Custom-designed full van wrap for mobile service businesses.",
   },
   {
-    title: "TechStart Hoodie Series",
+    title: "Box Truck Fleet Branding",
+    category: "Vehicle Wraps",
+    image: "/truck-1.jpg",
+    description: "High-visibility box truck graphic installations for local delivery fleets.",
+  },
+  {
+    title: "Custom Food Truck Wrap",
+    category: "Vehicle Wraps",
+    image: "/food-truck-1.jpg",
+    description: "Vibrant, durable wrap solutions specifically tailored for food vending trucks.",
+  },
+  {
+    title: "High-Tech Car Graphics",
+    category: "Vehicle Wraps",
+    image: "/car-wrapping-hi-tech.jpg",
+    description: "Sleek, eye-catching vehicle graphics that generate thousands of daily impressions.",
+  },
+  {
+    title: "Interior Commercial Wall Wraps",
+    category: "Large Format",
+    image: "/wall-wraps.jpg",
+    description: "Transformative interior commercial wall graphics and visual merchandising.",
+  },
+  {
+    title: "Classic Storefront Graphics",
+    category: "Large Format",
+    image: "/Storefront-Wall-Wraps.jpg",
+    description: "Window graphics and illuminated signage for retail locations.",
+  },
+  {
+    title: "Business Signage Solutions",
+    category: "Large Format",
+    image: "/lillys-printing-service.jpg",
+    description: "High-quality, durable signage designed to grab attention.",
+  },
+  {
+    title: "Premium Black T-Shirts",
     category: "Apparel",
-    image: "/service-digital.png", // Using digital image as placeholder for now
-    description: "Premium embroidered hoodies for tech startup launch event.",
+    image: "/T-SHIRT-31-3.jpg",
+    description: "High-quality screen printing on premium cotton for maximum durability.",
   },
   {
-    title: "Downtown Storefront",
-    category: "Large Format",
-    image: "https://images.unsplash.com/photo-1559136555-930d72f186c6?auto=format&fit=crop&q=80&w=800",
-    description: "Window graphics and illuminated signage for retail location.",
+    title: "Custom Event Apparel",
+    category: "Apparel",
+    image: "/custom-t-shirt-9.jpg",
+    description: "Vibrant, fade-resistant printed shirts perfect for corporate events.",
   },
   {
-    title: "Metro Food Truck",
-    category: "Vehicle Wraps",
-    image: "https://images.unsplash.com/photo-1565123409695-7b5ef63a2efb?auto=format&fit=crop&q=80&w=800",
-    description: "Vibrant full wrap design for high-visibility food truck.",
-  },
-  {
-    title: "Corporate Gala Banners",
-    category: "Large Format",
-    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800",
-    description: "Large scale step-and-repeat banners for annual corporate event.",
-  },
-  {
-    title: "Lilly's Printing Rebrand",
+    title: "Corporate Identity Branding",
     category: "Digital",
-    image: "/service-digital.png",
-    description: "Complete identity overhaul including logo, web, and social assets.",
+    image: "/branding.jpg",
+    description: "Complete identity overhaul including logo, style guide, and digital assets.",
+  },
+  {
+    title: "Social Media Campaigns",
+    category: "Digital",
+    image: "/social-media-2.jpg",
+    description: "Strategic social media management designed to elevate brand perception.",
   },
 ];
 

@@ -11,6 +11,7 @@ import Index from "./pages/Index";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
+import Catalog from "./pages/Catalog";
 import Contact from "./pages/Contact";
 import Automation from "./pages/Automation";
 import NotFound from "./pages/NotFound";
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/catalog" element={<Catalog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/automation" element={<Automation />} />
             <Route path="*" element={<NotFound />} />

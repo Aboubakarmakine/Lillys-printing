@@ -4,6 +4,7 @@ import ServicesOverview from "@/components/home/ServicesOverview";
 import AtlasPartnership from "@/components/home/AtlasPartnership";
 import SupportSection from "@/components/home/SupportSection";
 import PortfolioPreview from "@/components/home/PortfolioPreview";
+import PromoProductsTeaser from "@/components/home/PromoProductsTeaser";
 import Testimonials from "@/components/home/Testimonials";
 import FinalCTA from "@/components/home/FinalCTA";
 
@@ -16,6 +17,7 @@ const Index = () => {
       <AtlasPartnership />
       <SupportSection />
       <PortfolioPreview />
+      <PromoProductsTeaser />
       <Testimonials />
       <FinalCTA />
     </>
