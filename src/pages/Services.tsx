@@ -170,13 +170,15 @@ const Services = () => {
                     </div>
                   )}
 
-                  <div className="flex flex-wrap gap-3 mt-2">
+                  <div className="flex flex-wrap gap-4 mt-2">
                     <Button asChild size="lg">
                       <Link to="/contact" state={{ service: service.linkState }}>{t("services_page.get_quote")}</Link>
                     </Button>
-                    {service.linkState === "Custom Promotional Merchandise" && (
+                    {service.title === t("services_page.apparel.title") && (
                       <Button asChild size="lg" variant="outline">
-                        <Link to="/catalog">Browse Catalog →</Link>
+                        <a href="https://catalog.companycasuals.com" target="_blank" rel="noopener noreferrer">
+                          Browse Catalog →
+                        </a>
                       </Button>
                     )}
                   </div>
