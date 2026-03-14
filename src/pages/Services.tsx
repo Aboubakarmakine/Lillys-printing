@@ -176,8 +176,8 @@ const Services = () => {
                     </Button>
                     {service.title === t("services_page.apparel.title") && (
                       <Button asChild size="lg" variant="outline">
-                        <a href="https://catalog.companycasuals.com" target="_blank" rel="noopener noreferrer">
-                          Browse Catalog →
+                        <a href="https://catalog.companycasuals.com" target="_blank" rel="noopener noreferrer" className="group">
+                          Browse Catalog <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                         </a>
                       </Button>
                     )}
