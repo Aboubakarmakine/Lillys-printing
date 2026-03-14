@@ -204,9 +204,9 @@ export default function About() {
             <p className="text-xl text-slate-600">The dedicated professionals making sure your brand looks its absolute best.</p>
           </FadeIn>
 
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8 items-center justify-items-center">
             {team.map((member, idx) => (
-              <FadeIn key={idx} delay={idx * 0.1} className="w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.333%-21.33px)] max-w-[320px]">
+              <FadeIn key={idx} delay={idx * 0.1} className="w-full max-w-[280px]">
                 <img 
                   src={member.image} 
                   alt={member.name} 
