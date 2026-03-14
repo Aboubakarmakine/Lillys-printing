@@ -32,20 +32,29 @@ export default function About() {
 
   const team = [
     {
-      name: "Lilly Mejia",
+      name: "Liliana Mejía",
       role: "CEO",
+      image: "/team-graphics/liliana.jpg"
     },
     {
-      name: "Jose Mejia",
-      role: "Vehicle Wrapping Department",
+      name: "Elizabeth",
+      role: "SALES REP",
+      image: "/team-graphics/elizabeth.jpg"
     },
     {
-      name: "Edduin Leon",
-      role: "Graphic Designer",
+      name: "Lupita",
+      role: "SALES REP",
+      image: "/team-graphics/lupita.jpg"
     },
     {
-      name: "Melisa",
-      role: "Customer Service",
+      name: "Nahomy",
+      role: "SALES REPRESENTATIVE",
+      image: "/team-graphics/nahomy.jpg"
+    },
+    {
+      name: "Sammy",
+      role: "PRODUCTION MANAGER",
+      image: "/team-graphics/sammy.png"
     }
   ];
 
@@ -195,16 +204,14 @@ export default function About() {
             <p className="text-xl text-slate-600">The dedicated professionals making sure your brand looks its absolute best.</p>
           </FadeIn>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {team.map((member, idx) => (
-              <FadeIn key={idx} delay={idx * 0.1}>
-                <div className="group text-center bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:shadow-lg transition-all duration-300">
-                  <div className="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center mx-auto mb-6 text-slate-500 font-bold text-2xl group-hover:bg-red-100 group-hover:text-red-600 transition-colors duration-300">
-                    {member.name.charAt(0)}
-                  </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-1">{member.name}</h3>
-                  <p className="text-red-600 font-medium">{member.role}</p>
-                </div>
+              <FadeIn key={idx} delay={idx * 0.1} className="w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.333%-21.33px)] max-w-[320px]">
+                <img 
+                  src={member.image} 
+                  alt={member.name} 
+                  className="w-full h-auto rounded-2xl shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
+                />
               </FadeIn>
             ))}
           </div>
