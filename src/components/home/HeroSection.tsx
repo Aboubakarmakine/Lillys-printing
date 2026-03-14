@@ -2,7 +2,7 @@ import FadeIn from "@/components/FadeIn";
 
 const HeroSection = () => {
   return (
-    <section className="w-full mt-16 xl:mt-24 relative bg-white">
+    <section className="w-full relative bg-white">
       <FadeIn>
         <div className="w-full">
           <div className="relative overflow-hidden group">
