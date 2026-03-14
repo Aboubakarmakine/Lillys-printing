@@ -43,7 +43,7 @@ const Services = () => {
     {
       icon: Printer,
       title: t("services_page.print.title"),
-      image: "/business_cards.webp",
+      image: "/business-cards-promo.jpg",
       description: t("services_page.print.desc"),
       process: t("services_page.print.process", { returnObjects: true }) as string[],
       benefits: t("services_page.print.benefits", { returnObjects: true }) as string[],

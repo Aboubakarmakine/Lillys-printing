@@ -4,28 +4,34 @@ import FadeIn from "@/components/FadeIn";
 
 const projects = [
   {
-    title: "TechCorp Annual Report",
-    description: "500-page premium bound report with foil stamping",
+    title: "Premium Fleet Branding",
+    description: "Full commercial vehicle wraps for regional delivery fleets",
+    image: "/car-wrapping-hi-tech.jpg"
   },
   {
-    title: "Metro Fitness Rebrand",
-    description: "Complete branded apparel line for 12 franchise locations",
+    title: "Enterprise Storefront",
+    description: "Complete exterior signage and window graphics",
+    image: "/storefront_wraps.webp"
   },
   {
-    title: "Downtown Gala Signage",
-    description: "Large format event signage and directional displays",
+    title: "Custom Apparel Line",
+    description: "High-quality screen printed and embroidered uniforms",
+    image: "/custom-t-shirt-9.jpg"
   },
   {
-    title: "GreenLeaf Product Catalog",
-    description: "120-page full-color catalog with matte finish",
+    title: "Event Marketing",
+    description: "Large format banners and promotional displays",
+    image: "/flyer_design.png"
   },
   {
-    title: "Horizon Bank Materials",
-    description: "Business cards, letterheads, and envelope suite",
+    title: "Corporate Identity Suite",
+    description: "Premium business cards, letterheads, and envelopes",
+    image: "/business_cards.webp"
   },
   {
-    title: "Summit Conference Package",
-    description: "Badges, banners, programs, and promotional items",
+    title: "Promotional Catalog",
+    description: "Full-color printed catalogs with premium finishes",
+    image: "/catalog-page-1.png"
   },
 ];
 
@@ -47,17 +53,17 @@ const PortfolioPreview = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, i) => (
             <FadeIn key={project.title} delay={i * 0.08}>
-              <div className="group relative aspect-[4/3] rounded-lg overflow-hidden bg-muted cursor-pointer">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-muted-foreground/50 font-heading text-lg">
-                    {project.title}
-                  </span>
-                </div>
-                <div className="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-primary-foreground p-6">
-                  <h3 className="font-heading font-bold text-lg text-center">
+              <div className="group relative aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 cursor-pointer shadow-sm hover:shadow-xl transition-all duration-300">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
+                  <h3 className="font-heading font-bold text-2xl text-white mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                     {project.title}
                   </h3>
-                  <p className="text-sm text-primary-foreground/80 mt-2 text-center">
+                  <p className="text-slate-300 leading-relaxed transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
                     {project.description}
                   </p>
                 </div>
