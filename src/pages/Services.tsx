@@ -11,7 +11,7 @@ const Services = () => {
     {
       icon: Package,
       title: t("services_page.wraps.title"),
-      image: "/promo_merch.png",
+      image: "/car-wrapping-promo.jpg",
       description: t("services_page.wraps.desc"),
       process: t("services_page.wraps.process", { returnObjects: true }) as string[],
       benefits: t("services_page.wraps.benefits", { returnObjects: true }) as string[],
