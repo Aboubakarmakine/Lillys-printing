@@ -19,8 +19,7 @@ const FinalCTA = () => {
               <Button
                 asChild
                 size="lg"
-                variant="outline"
-                className="border-white bg-transparent text-white hover:bg-white hover:text-primary"
+                className="bg-white text-primary hover:bg-white/90 font-bold"
               >
                 <Link to="/contact">Request a Consultation</Link>
               </Button>
