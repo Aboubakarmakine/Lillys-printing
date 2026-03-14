@@ -1,7 +1,6 @@
 import HeroSection from "@/components/home/HeroSection";
 import StatsBar from "@/components/home/StatsBar";
 import ServicesOverview from "@/components/home/ServicesOverview";
-import AtlasTimeline from "@/components/home/AtlasTimeline";
 import SupportSection from "@/components/home/SupportSection";
 import PortfolioPreview from "@/components/home/PortfolioPreview";
 import PromoProductsTeaser from "@/components/home/PromoProductsTeaser";
@@ -13,7 +12,6 @@ const Index = () => {
     <>
       <HeroSection />
       <StatsBar />
-      <AtlasTimeline />
       <ServicesOverview />
       <SupportSection />
       <PortfolioPreview />

@@ -2,6 +2,7 @@ import FadeIn from "@/components/FadeIn";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import AtlasTimeline from "@/components/home/AtlasTimeline";
 import {
   Bot,
   Workflow,
@@ -233,6 +234,9 @@ const Automation = () => {
           </FadeIn>
         </div>
       </section>
+
+      {/* ── Atlas Timeline ── */}
+      <AtlasTimeline />
 
       {/* ── Stats Bar ── */}
       <section className="py-16 border-y border-slate-800">
