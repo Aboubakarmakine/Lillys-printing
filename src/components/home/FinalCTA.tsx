@@ -20,14 +20,14 @@ const FinalCTA = () => {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-white bg-transparent text-white hover:bg-white hover:text-red-700"
+                className="border-white bg-transparent text-white hover:bg-white hover:text-primary"
               >
                 <Link to="/contact">Request a Consultation</Link>
               </Button>
               <Button
                 asChild
                 size="lg"
-                className="bg-white text-red-700 hover:bg-white/90"
+                className="bg-white text-primary hover:bg-white/90 font-bold"
               >
                 <Link to="/contact">Start Your Order</Link>
               </Button>

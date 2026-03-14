@@ -6,32 +6,32 @@ const projects = [
   {
     title: "Premium Fleet Branding",
     description: "Full commercial vehicle wraps for regional delivery fleets",
-    image: "/car-wrapping-hi-tech.jpg"
+    image: "/ai_fleet_wrap.png"
   },
   {
     title: "Enterprise Storefront",
     description: "Complete exterior signage and window graphics",
-    image: "/storefront_wraps.webp"
+    image: "/ai_storefront_signage.png"
   },
   {
     title: "Custom Apparel Line",
     description: "High-quality screen printed and embroidered uniforms",
-    image: "/custom-t-shirt-9.jpg"
+    image: "/ai_apparel.png"
   },
   {
     title: "Event Marketing",
     description: "Large format banners and promotional displays",
-    image: "/flyer_design.png"
+    image: "/ai_event_marketing.png"
   },
   {
     title: "Corporate Identity Suite",
     description: "Premium business cards, letterheads, and envelopes",
-    image: "/business_cards.webp"
+    image: "/ai_corporate_identity.png"
   },
   {
     title: "Promotional Catalog",
     description: "Full-color printed catalogs with premium finishes",
-    image: "/catalog-page-1.png"
+    image: "/ai_catalog.png"
   },
 ];
 
