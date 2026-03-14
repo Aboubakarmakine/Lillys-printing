@@ -16,12 +16,19 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/60 z-0"></div>
       <ParticleNetwork />
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col items-center justify-center text-center min-h-[50vh]">
-          <FadeIn className="flex flex-col items-center">
-            <div className="absolute top-10 right-4 lg:right-10 z-50 inline-flex items-center gap-3 px-6 py-4 rounded-full border-2 border-red-500 bg-red-600 shadow-[0_0_30px_rgba(220,38,38,0.8)] animate-pulse hover:animate-none transition-transform hover:scale-105">
+        
+        {/* Riverdale Badge - Safely positioned outside the centered text flow */}
+        <div className="w-full flex justify-center mb-8 lg:absolute lg:top-0 lg:right-6 lg:justify-end lg:mb-0 z-50">
+          <FadeIn>
+            <div className="inline-flex items-center gap-3 px-6 py-4 rounded-full border-2 border-red-500 bg-red-600 shadow-[0_0_30px_rgba(220,38,38,0.8)] animate-pulse hover:animate-none transition-transform hover:scale-105">
               <span className="w-3 h-3 rounded-full bg-white"></span>
-              <span className="text-xl lg:text-3xl font-black tracking-widest text-white drop-shadow-lg">NOW OPEN IN RIVERDALE</span>
+              <span className="text-xl lg:text-2xl font-black tracking-widest text-white drop-shadow-lg">NOW OPEN IN RIVERDALE</span>
             </div>
+          </FadeIn>
+        </div>
+
+        <div className="flex flex-col items-center justify-center text-center min-h-[50vh] lg:pt-10">
+          <FadeIn className="flex flex-col items-center">
             <h1 className="text-4xl lg:text-7xl font-heading font-bold text-white leading-tight max-w-4xl mx-auto">
               <ScrambledText text={t("hero.title")} delay={0.2} />{" "}
               <span className="text-red-600 block mt-2 drop-shadow-md">
