@@ -11,7 +11,7 @@ const Services = () => {
     {
       icon: Package,
       title: t("services_page.wraps.title"),
-      image: "/car-wrapping-promo.jpg",
+      image: "/promo_merch_new.jpg",
       description: t("services_page.wraps.desc"),
       process: t("services_page.wraps.process", { returnObjects: true }) as string[],
       benefits: t("services_page.wraps.benefits", { returnObjects: true }) as string[],
@@ -68,7 +68,7 @@ const Services = () => {
     {
       icon: Store,
       title: t("services_page.storefront.title"),
-      image: "/storefront_wraps.webp",
+      image: "/car-wrapping-promo.jpg",
       description: t("services_page.storefront.desc"),
       linkState: "Storefront & Wall Wraps",
     },
