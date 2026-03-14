@@ -235,8 +235,6 @@ const Automation = () => {
         </div>
       </section>
 
-      {/* ── Atlas Timeline ── */}
-      <AtlasTimeline />
 
       {/* ── Stats Bar ── */}
       <section className="py-16 border-y border-slate-800">
@@ -296,69 +294,8 @@ const Automation = () => {
         </div>
       </section>
 
-      {/* ── Partnership Value Section ── */}
-      <section className="py-24 bg-gradient-to-b from-slate-950 to-slate-900">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <FadeIn>
-              <div className="space-y-6">
-                <span className="text-red-500 font-semibold tracking-widest uppercase text-sm block">Atlas × Lilly's Printing</span>
-                <h2 className="text-4xl lg:text-5xl font-black leading-tight">
-                  Your End-to-End{" "}
-                  <span className="text-red-400">Business Infrastructure</span>{" "}
-                  Partner.
-                </h2>
-                <p className="text-xl text-slate-400 leading-relaxed">
-                  We don't just build websites. We don't just run ads. We build the entire interconnected system — from how your phone is answered to how your marketing is deployed to how your team operates — so that you can scale 10× without hiring 10× more people.
-                </p>
-                <p className="text-lg text-slate-400 leading-relaxed">
-                  Wherever you are in your business journey — whether you're at Day 1 or Day 1,000 — Atlas designs a custom pathway to your ultimate goals.
-                </p>
-                <div className="space-y-4 pt-4">
-                  {[
-                    { icon: Globe, text: "Custom websites and digital marketing ecosystems" },
-                    { icon: Bot, text: "AI-powered voice, chat, and email agents" },
-                    { icon: Layers, text: "Interconnected CRM, scheduling, and ops automation" },
-                    { icon: ShieldCheck, text: "White-glove setup, training, and ongoing support" },
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-4">
-                      <div className="w-10 h-10 flex-shrink-0 bg-red-600/20 rounded-xl flex items-center justify-center">
-                        <item.icon className="w-5 h-5 text-red-400" />
-                      </div>
-                      <p className="text-slate-300">{item.text}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </FadeIn>
-
-            {/* Info Card */}
-            <FadeIn delay={0.2}>
-              <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-10 text-center">
-                <div className="w-20 h-20 bg-red-600/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Cpu className="w-10 h-10 text-red-400" />
-                </div>
-                <h3 className="text-2xl font-black mb-4">Atlas Business Solutions</h3>
-                <p className="text-slate-400 mb-8 leading-relaxed">
-                  Atlas is the automation and technology partner behind Lilly's Printing's enterprise-grade operations. From AI infrastructure to digital marketing, Atlas makes businesses run like a Fortune 500 company.
-                </p>
-                <div className="space-y-3">
-                  <Button asChild className="w-full bg-red-600 hover:bg-red-700 text-white h-12 rounded-full font-bold">
-                    <a href="https://atlasaisolutions.com" target="_blank" rel="noopener noreferrer">
-                      Visit Atlas AI Solutions →
-                    </a>
-                  </Button>
-                  <Button asChild variant="outline" className="w-full border-slate-600 text-white hover:bg-slate-800 bg-transparent h-12 rounded-full font-bold">
-                    <Link to="/contact">
-                      Get Your Automation Consultation
-                    </Link>
-                  </Button>
-                </div>
-              </div>
-            </FadeIn>
-          </div>
-        </div>
-      </section>
+      {/* ── Atlas Timeline (End-to-End Infrastructure) ── */}
+      <AtlasTimeline />
 
       {/* ── Final CTA ── */}
       <section className="py-28 relative overflow-hidden">
