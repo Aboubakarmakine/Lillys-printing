@@ -14,8 +14,8 @@ const promoItems = [
 ];
 
 const PromoProductsTeaser = () => {
-  const { i18n } = useTranslation();
-  const isEs = i18n.language === "es";
+  const { t } = useTranslation();
+  const itemsText = t("home.promo.items", { returnObjects: true }) as string[];
 
   return (
     <section className="py-20 bg-secondary/30">
@@ -28,21 +28,19 @@ const PromoProductsTeaser = () => {
                   <Gift size={24} className="text-primary" />
                 </div>
                 <span className="text-sm font-semibold uppercase tracking-widest text-primary">
-                  {isEs ? "Catálogo 2026" : "2026 Catalog"}
+                  {t("home.promo.badge")}
                 </span>
               </div>
               <h2 className="text-3xl lg:text-4xl font-heading font-bold text-foreground">
-                {isEs ? "Productos Promocionales" : "Promotional Products"}
+                {t("home.promo.title")}
               </h2>
               <p className="mt-3 text-muted-foreground max-w-lg">
-                {isEs
-                  ? "Artículos personalizados con tu logo para eventos, clientes y empleados. Mínimo 100 piezas."
-                  : "Custom-branded items for events, clients, and giveaways. Starting at 100 pieces."}
+                {t("home.promo.desc")}
               </p>
             </div>
             <Button asChild size="lg" className="shrink-0">
               <Link to="/catalog" className="flex items-center gap-2">
-                {isEs ? "Ver Catálogo Completo" : "View Full Catalog"}
+                {t("home.promo.view_btn")}
                 <ArrowRight size={16} />
               </Link>
             </Button>
@@ -63,7 +61,7 @@ const PromoProductsTeaser = () => {
                 </div>
                 <div className="p-2 text-center">
                   <p className="text-xs font-medium text-muted-foreground group-hover:text-primary transition-colors truncate">
-                    {item.name}
+                    {itemsText[i] || item.name}
                   </p>
                 </div>
               </Link>

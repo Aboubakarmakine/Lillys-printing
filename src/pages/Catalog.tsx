@@ -107,14 +107,19 @@ const products = [
   },
 ];
 
-const categories = ["All", "Office & Stationery", "Bags", "Tools & Accessories", "Accessories", "Drinkware"];
-
 const Catalog = () => {
-  const { i18n } = useTranslation();
-  const isEs = i18n.language === "es";
+  const { t, i18n } = useTranslation();
+  const isEs = i18n.language?.startsWith("es");
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const filtered = activeCategory === "All" ? products : products.filter((p) => p.category === activeCategory);
+  const categoriesTransl = t("catalog.categories", { returnObjects: true }) as string[];
+  const categoriesMap = ["All", "Office & Stationery", "Bags", "Tools & Accessories", "Accessories", "Drinkware"];
+
+  const activeCategoryKey = categoriesTransl.includes(activeCategory)
+    ? categoriesMap[categoriesTransl.indexOf(activeCategory)]
+    : "All";
+
+  const filtered = activeCategoryKey === "All" ? products : products.filter((p) => p.category === activeCategoryKey);
 
   return (
     <div className="py-20 bg-background min-h-screen">
@@ -123,23 +128,21 @@ const Catalog = () => {
         <FadeIn>
           <div className="text-center mb-10">
             <h1 className="text-4xl lg:text-5xl font-heading font-bold text-foreground">
-              {isEs ? "Productos Promocionales" : "Promotional Products"} 2026
+              {t("catalog.title")}
             </h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              {isEs
-                ? "Artículos personalizados de alta calidad para tu marca. Mínimo 100 piezas. ¡Contáctanos para cotización!"
-                : "High-quality branded merchandise for your business. Minimum 100 pieces. Contact us for a custom quote!"}
+              {t("catalog.subtitle")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
               <Button asChild size="lg">
                 <Link to="/contact" state={{ service: "Custom Promotional Merchandise" }}>
-                  {isEs ? "Solicitar Cotización" : "Request a Quote"}
+                  {t("catalog.btn_quote")}
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
                 <a href="/PRODUCTOS PROMOCIONALES 2026.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   <Download size={16} />
-                  {isEs ? "Descargar Catálogo (PDF)" : "Download Full Catalog (PDF)"}
+                  {t("catalog.btn_download")}
                 </a>
               </Button>
             </div>
@@ -149,12 +152,12 @@ const Catalog = () => {
         {/* Category Filters */}
         <FadeIn delay={0.1}>
           <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {categories.map((cat) => (
+            {categoriesTransl.map((cat, idx) => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                  activeCategory === cat
+                  activeCategory === cat || (activeCategory === "All" && idx === 0)
                     ? "bg-primary text-primary-foreground shadow-lg scale-105"
                     : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
                 }`}
@@ -186,10 +189,10 @@ const Catalog = () => {
                   </h3>
                   <p className="text-base font-bold text-primary mt-1">{product.price}</p>
                   <div className="flex items-center justify-between mt-2">
-                    <p className="text-xs text-muted-foreground">Min: {product.minQty}</p>
+                    <p className="text-xs text-muted-foreground">{t("catalog.min")}: {product.minQty}</p>
                     <Button asChild size="sm" variant="outline" className="h-7 text-xs px-2">
                       <Link to="/contact" state={{ service: "Custom Promotional Merchandise" }}>
-                        {isEs ? "Cotizar" : "Quote"}
+                        {t("catalog.quote_item")}
                       </Link>
                     </Button>
                   </div>
@@ -203,17 +206,15 @@ const Catalog = () => {
         <FadeIn delay={0.2}>
           <div className="bg-primary/5 border border-primary/20 rounded-2xl p-12 text-center">
             <h2 className="text-2xl lg:text-3xl font-heading font-bold text-foreground mb-4">
-              {isEs ? "¿Listo para hacer un pedido?" : "Ready to place an order?"}
+              {t("catalog.cta_title")}
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-              {isEs
-                ? "Llámanos o envíanos un mensaje. Nuestro equipo te ayudará a personalizar cada artículo para tu marca."
-                : "Call us or send a message. Our team will help you customize every item for your brand."}
+              {t("catalog.cta_desc")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg">
                 <Link to="/contact" state={{ service: "Custom Promotional Merchandise" }}>
-                  {isEs ? "Contáctanos" : "Contact Us"}
+                  {t("catalog.btn_contact")}
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">

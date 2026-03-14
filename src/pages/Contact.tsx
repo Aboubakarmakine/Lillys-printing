@@ -17,6 +17,7 @@ import {
 import FadeIn from "@/components/FadeIn";
 import { Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "react-i18next";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100),
@@ -31,11 +32,12 @@ type ContactFormValues = z.infer<typeof contactSchema>;
 const Contact = () => {
   const { toast } = useToast();
   const location = useLocation();
+  const { t, i18n } = useTranslation();
 
   // Check if we navigated here with a specific service in mind
   const serviceInterest = location.state?.service;
   const defaultMessage = serviceInterest
-    ? `Hi, I'm interested in a quote for ${serviceInterest}...`
+    ? (i18n.language?.startsWith("es") ? `Hola, me interesa una cotización para ${serviceInterest}...` : `Hi, I'm interested in a quote for ${serviceInterest}...`)
     : "";
 
   const form = useForm<ContactFormValues>({
@@ -98,16 +100,16 @@ const Contact = () => {
       await Promise.all([emailPromise, sheetsPromise]);
 
       toast({
-        title: "Message Sent Successfully!",
-        description: "We'll get back to you shortly.",
+        title: t("contact.form.success_title"),
+        description: t("contact.form.success_desc"),
         variant: "default",
       });
       form.reset();
     } catch (error) {
       console.error("Submission Error:", error);
       toast({
-        title: "Failed to send message",
-        description: "Please try again later or call us directly.",
+        title: t("contact.form.fail_title"),
+        description: t("contact.form.fail_desc"),
         variant: "destructive",
       });
     }
@@ -119,10 +121,10 @@ const Contact = () => {
         <FadeIn>
           <div className="text-center mb-16">
             <h1 className="text-4xl lg:text-5xl font-heading font-bold text-foreground">
-              Contact Us
+              {t("contact.title")}
             </h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              Ready to start your next project? Get in touch with our team.
+              {t("contact.desc")}
             </p>
           </div>
         </FadeIn>
@@ -140,9 +142,9 @@ const Contact = () => {
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Name *</FormLabel>
+                        <FormLabel>{t("contact.form.name")}</FormLabel>
                         <FormControl>
-                          <Input placeholder="Your name" {...field} />
+                          <Input placeholder={t("contact.form.name_ph")} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -153,11 +155,11 @@ const Contact = () => {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Email *</FormLabel>
+                        <FormLabel>{t("contact.form.email")}</FormLabel>
                         <FormControl>
                           <Input
                             type="email"
-                            placeholder="you@company.com"
+                            placeholder={t("contact.form.email_ph")}
                             {...field}
                           />
                         </FormControl>
@@ -172,9 +174,9 @@ const Contact = () => {
                     name="phone"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Phone</FormLabel>
+                        <FormLabel>{t("contact.form.phone")}</FormLabel>
                         <FormControl>
-                          <Input placeholder="(443) 454-2210" {...field} />
+                          <Input placeholder={t("contact.form.phone_ph")} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -185,9 +187,9 @@ const Contact = () => {
                     name="company"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Company</FormLabel>
+                        <FormLabel>{t("contact.form.company")}</FormLabel>
                         <FormControl>
-                          <Input placeholder="Your company" {...field} />
+                          <Input placeholder={t("contact.form.company_ph")} {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -199,10 +201,10 @@ const Contact = () => {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Message *</FormLabel>
+                      <FormLabel>{t("contact.form.msg")}</FormLabel>
                       <FormControl>
                         <Textarea
-                          placeholder="Tell us about your project..."
+                          placeholder={t("contact.form.msg_ph")}
                           rows={6}
                           {...field}
                         />
@@ -212,7 +214,7 @@ const Contact = () => {
                   )}
                 />
                 <Button type="submit" size="lg" className="w-full sm:w-auto">
-                  Send Message
+                  {t("contact.form.submit")}
                 </Button>
               </form>
             </Form>
@@ -222,13 +224,13 @@ const Contact = () => {
             <div className="space-y-8">
               <div>
                 <h2 className="text-2xl font-heading font-bold text-foreground mb-6">
-                  Get In Touch
+                  {t("contact.info.title")}
                 </h2>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
                     <Phone size={20} className="text-primary mt-1" />
                     <div>
-                      <p className="font-medium text-foreground">Phone</p>
+                      <p className="font-medium text-foreground">{t("contact.info.phone")}</p>
                       <p className="text-muted-foreground">(443) 454-2210</p>
                       <p className="text-muted-foreground text-xs">(410) 988-4422</p>
                     </div>
@@ -236,7 +238,7 @@ const Contact = () => {
                   <div className="flex items-start gap-4">
                     <Mail size={20} className="text-primary mt-1" />
                     <div>
-                      <p className="font-medium text-foreground">Email</p>
+                      <p className="font-medium text-foreground">{t("contact.info.email")}</p>
                       <p className="text-muted-foreground">
                         info@lillysprinting.com
                       </p>
@@ -246,10 +248,10 @@ const Contact = () => {
                     <Clock size={20} className="text-primary mt-1" />
                     <div>
                       <p className="font-medium text-foreground">
-                        Business Hours
+                        {t("contact.info.hours")}
                       </p>
-                      <p className="text-muted-foreground">Mon–Fri: 8AM – 6PM</p>
-                      <p className="text-muted-foreground">Sat: 9AM – 2PM</p>
+                      <p className="text-muted-foreground">{t("footer.hours")}</p>
+                      <p className="text-muted-foreground">{t("footer.hours_sat")}</p>
                     </div>
                   </div>
                 </div>
@@ -259,18 +261,17 @@ const Contact = () => {
                 <div className="flex items-center gap-3 mb-2">
                   <MessageCircle size={20} className="text-primary" />
                   <h3 className="font-heading font-semibold text-foreground">
-                    24/7 AI Chat Available
+                    {t("contact.info.ai_title")}
                   </h3>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Need help outside business hours? Our AI assistant is available
-                  24/7 via the chat widget in the bottom-right corner.
+                  {t("contact.info.ai_desc")}
                 </p>
               </div>
 
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <p className="font-semibold text-sm text-foreground">Baltimore Office</p>
+                  <p className="font-semibold text-sm text-foreground">{t("contact.locations.baltimore")}</p>
                   <div className="bg-muted rounded-lg overflow-hidden aspect-square border border-border/50 shadow-sm">
                     <iframe
                       src="https://maps.google.com/maps?q=5528+Belair+Rd,+Baltimore,+MD+21206&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -285,7 +286,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <p className="font-semibold text-sm text-foreground">Arnold Office</p>
+                  <p className="font-semibold text-sm text-foreground">{t("contact.locations.arnold")}</p>
                   <div className="bg-muted rounded-lg overflow-hidden aspect-square border border-border/50 shadow-sm">
                     <iframe
                       src="https://maps.google.com/maps?cid=7365640885426244173&t=&z=16&ie=UTF8&iwloc=&output=embed"

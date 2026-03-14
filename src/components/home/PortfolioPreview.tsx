@@ -1,51 +1,37 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import FadeIn from "@/components/FadeIn";
+import { useTranslation } from "react-i18next";
 
-const projects = [
-  {
-    title: "Premium Fleet Branding",
-    description: "Full commercial vehicle wraps for regional delivery fleets",
-    image: "/ai_fleet_wrap.png"
-  },
-  {
-    title: "Enterprise Storefront",
-    description: "Complete exterior signage and window graphics",
-    image: "/ai_storefront_signage.png"
-  },
-  {
-    title: "Custom Apparel Line",
-    description: "High-quality screen printed and embroidered uniforms",
-    image: "/ai_apparel.png"
-  },
-  {
-    title: "Event Marketing",
-    description: "Large format banners and promotional displays",
-    image: "/ai_event_marketing.png"
-  },
-  {
-    title: "Corporate Identity Suite",
-    description: "Premium business cards, letterheads, and envelopes",
-    image: "/ai_corporate_identity.png"
-  },
-  {
-    title: "Promotional Catalog",
-    description: "Full-color printed catalogs with premium finishes",
-    image: "/ai_catalog.png"
-  },
+const projectImages = [
+  "/ai_fleet_wrap.png",
+  "/ai_storefront_signage.png",
+  "/ai_apparel.png",
+  "/ai_event_marketing.png",
+  "/ai_corporate_identity.png",
+  "/ai_catalog.png"
 ];
 
 const PortfolioPreview = () => {
+  const { t } = useTranslation();
+  const projectsData = t("home.portfolio.projects", { returnObjects: true }) as { title: string, desc: string }[];
+  
+  const projects = projectsData.map((p, i) => ({
+    title: p.title,
+    description: p.desc,
+    image: projectImages[i]
+  }));
+
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <FadeIn>
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-heading font-bold text-foreground">
-              Featured Work
+              {t("home.portfolio.title")}
             </h2>
             <p className="mt-4 text-muted-foreground">
-              A selection of projects that showcase our capabilities.
+              {t("home.portfolio.desc")}
             </p>
           </div>
         </FadeIn>
@@ -75,7 +61,7 @@ const PortfolioPreview = () => {
         <FadeIn delay={0.3}>
           <div className="text-center mt-12">
             <Button asChild variant="outline" size="lg">
-              <Link to="/portfolio">View Full Portfolio</Link>
+              <Link to="/portfolio">{t("home.portfolio.view_all")}</Link>
             </Button>
           </div>
         </FadeIn>

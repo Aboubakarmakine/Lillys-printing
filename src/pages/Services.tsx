@@ -5,7 +5,7 @@ import { Palette, Store, FileText, Printer, Shirt, CarFront, Monitor, Package, S
 import { useTranslation } from "react-i18next";
 
 const Services = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const services = [
     {
@@ -177,7 +177,7 @@ const Services = () => {
                     {service.title === t("services_page.apparel.title") && (
                       <Button asChild size="lg" variant="outline">
                         <a href="https://catalog.companycasuals.com" target="_blank" rel="noopener noreferrer" className="group">
-                          Browse Catalog <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                          {i18n.language?.startsWith('es') ? "Explorar Catálogo" : "Browse Catalog"} <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                         </a>
                       </Button>
                     )}
@@ -221,7 +221,7 @@ const Services = () => {
                   ) : (
                     <div className="bg-secondary/50 rounded-2xl p-12 h-full flex flex-col justify-center items-center text-center aspect-[4/5] border border-border/50">
                       <service.icon size={80} className="text-primary/20 mb-6" />
-                      <h3 className="text-2xl font-bold text-muted-foreground/40">Premium {service.title}</h3>
+                      <h3 className="text-2xl font-bold text-muted-foreground/40">{service.title}</h3>
                     </div>
                   )}
                 </div>

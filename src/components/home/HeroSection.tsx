@@ -22,7 +22,7 @@ const HeroSection = () => {
           <FadeIn>
             <div className="inline-flex items-center gap-3 px-6 py-4 rounded-full border-2 border-red-500 bg-red-600 shadow-[0_0_30px_rgba(220,38,38,0.8)] animate-pulse hover:animate-none transition-transform hover:scale-105">
               <span className="w-3 h-3 rounded-full bg-white"></span>
-              <span className="text-xl lg:text-2xl font-black tracking-widest text-white drop-shadow-lg">NOW OPEN IN RIVERDALE</span>
+              <span className="text-xl lg:text-2xl font-black tracking-widest text-white drop-shadow-lg">{t("hero.banner")}</span>
             </div>
           </FadeIn>
         </div>

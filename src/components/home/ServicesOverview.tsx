@@ -2,45 +2,45 @@ import { Link } from "react-router-dom";
 import { Printer, Shirt, Package, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FadeIn from "@/components/FadeIn";
-
-const services = [
-  {
-    icon: Shirt,
-    title: "Premium Branded Apparel",
-    description:
-      "Cultivate corporate identity with premium embroidery and advanced screen printing built to last.",
-  },
-  {
-    icon: Package,
-    title: "Custom Promotional Merchandise",
-    description:
-      "Curated, high-quality promotional merchandise designed to leave a lasting impression and cultivate brand loyalty.",
-  },
-  {
-    icon: Printer,
-    title: "High-End Business Cards",
-    description:
-      "Tangible assets crafted with absolute precision, featuring specialty finishes that leave a definitive physical impression.",
-  },
-  {
-    icon: Smartphone,
-    title: "Digital & Social Media Marketing",
-    description:
-      "Strategic digital presence and engaging content designed to elevate your brand perception and drive measurable growth.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const ServicesOverview = () => {
+  const { t, i18n } = useTranslation();
+  const isEs = i18n.language?.startsWith("es");
+
+  const services = [
+    {
+      icon: Shirt,
+      title: t("services_page.apparel.title"),
+      description: t("services_page.apparel.desc"),
+    },
+    {
+      icon: Package,
+      title: t("services_page.wraps.title"),
+      description: t("services_page.wraps.desc"),
+    },
+    {
+      icon: Printer,
+      title: t("services_page.print.title"),
+      description: t("services_page.print.desc"),
+    },
+    {
+      icon: Smartphone,
+      title: t("services_page.digital.title"),
+      description: t("services_page.digital.desc"),
+    },
+  ];
+
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <FadeIn>
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-heading font-bold text-foreground">
-              Premium Capabilities
+              {t("services_page.title")}
             </h2>
             <p className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto">
-              Bespoke printing and digital solutions engineered for brands that demand absolute excellence.
+              {t("services_page.subtitle")}
             </p>
           </div>
         </FadeIn>
@@ -57,7 +57,7 @@ const ServicesOverview = () => {
                   {service.description}
                 </p>
                 <Button asChild variant="link" className="mt-4 p-0 justify-start">
-                  <Link to="/services">Learn More →</Link>
+                  <Link to="/services">{isEs ? "Aprende Más →" : "Learn More →"}</Link>
                 </Button>
               </div>
             </FadeIn>

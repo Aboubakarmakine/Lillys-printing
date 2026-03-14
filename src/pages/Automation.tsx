@@ -3,6 +3,7 @@ import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import AtlasTimeline from "@/components/home/AtlasTimeline";
+import { useTranslation } from "react-i18next";
 import {
   Bot,
   Workflow,
@@ -24,81 +25,39 @@ import {
   X,
 } from "lucide-react";
 
-const capabilities = [
-  {
-    icon: PhoneCall,
-    stat: "24/7",
-    statLabel: "ACTIVE",
-    title: "AI Voice & Chat Agents",
-    description:
-      "Intelligent AI agents that answer every call, respond to every message, book appointments, and capture leads — day or night, without a single missed opportunity.",
-  },
-  {
-    icon: Workflow,
-    stat: "10×",
-    statLabel: "OUTPUT",
-    title: "Workflow Automation",
-    description:
-      "Automate your repetitive business processes from order intake, follow-ups, invoicing, and internal coordination — so your team focuses only on high-value work.",
-  },
-  {
-    icon: FileText,
-    stat: "<60s",
-    statLabel: "RESPONSE",
-    title: "Instant Quote Processing",
-    description:
-      "AI-powered quote generation that respond to project inquiries with accurate, professional estimates in seconds — accelerating your sales cycle dramatically.",
-  },
-  {
-    icon: MessageSquare,
-    stat: "100%",
-    statLabel: "CAPTURED",
-    title: "Lead Capture & Nurturing",
-    description:
-      "Every web visitor, caller, and social inquirer is captured, tagged, and enrolled in an automated nurture sequence — turning cold leads into paying clients.",
-  },
-  {
-    icon: CalendarCheck,
-    stat: "0",
-    statLabel: "NO-SHOWS",
-    title: "Smart Appointment Booking",
-    description:
-      "AI-driven scheduling that manages your calendar, sends reminders, and handles rescheduling requests — so you never lose revenue to missed appointments.",
-  },
-  {
-    icon: BarChart3,
-    stat: "Live",
-    statLabel: "ANALYTICS",
-    title: "Performance Dashboards",
-    description:
-      "Real-time visibility into every automation system — leads captured, calls handled, quotes sent — so you can make smarter business decisions with clean data.",
-  },
-];
-
-const before = [
-  "Missed calls going straight to voicemail",
-  "Manual quote processing taking days",
-  "Leads slipping through the cracks",
-  "Staff buried in repetitive admin tasks",
-  "No visibility into what's working",
-];
-
-const after = [
-  "AI agent answers every call, 24/7",
-  "Instant, professional quotes in seconds",
-  "Every lead captured and nurtured automatically",
-  "Your team focused on what they do best",
-  "Live dashboards for full business clarity",
-];
-
-const stats = [
-  { value: 100, suffix: "%", label: "Calls Answered" },
-  { value: 42, suffix: "%", label: "Faster Response" },
-  { value: 31, suffix: "%", label: "More Retained Clients" },
-  { value: 10, suffix: "×", label: "Team Output Multiplier" },
-];
-
 const Automation = () => {
+  const { t } = useTranslation();
+
+  const capabilitiesTransl = t("automation.stack.items", { returnObjects: true }) as { stat: string, label: string, title: string, desc: string }[];
+  
+  const capabilities = [
+    { icon: PhoneCall, stat: capabilitiesTransl[0]?.stat, statLabel: capabilitiesTransl[0]?.label, title: capabilitiesTransl[0]?.title, description: capabilitiesTransl[0]?.desc },
+    { icon: Workflow, stat: capabilitiesTransl[1]?.stat, statLabel: capabilitiesTransl[1]?.label, title: capabilitiesTransl[1]?.title, description: capabilitiesTransl[1]?.desc },
+    { icon: FileText, stat: capabilitiesTransl[2]?.stat, statLabel: capabilitiesTransl[2]?.label, title: capabilitiesTransl[2]?.title, description: capabilitiesTransl[2]?.desc },
+    { icon: MessageSquare, stat: capabilitiesTransl[3]?.stat, statLabel: capabilitiesTransl[3]?.label, title: capabilitiesTransl[3]?.title, description: capabilitiesTransl[3]?.desc },
+    { icon: CalendarCheck, stat: capabilitiesTransl[4]?.stat, statLabel: capabilitiesTransl[4]?.label, title: capabilitiesTransl[4]?.title, description: capabilitiesTransl[4]?.desc },
+    { icon: BarChart3, stat: capabilitiesTransl[5]?.stat, statLabel: capabilitiesTransl[5]?.label, title: capabilitiesTransl[5]?.title, description: capabilitiesTransl[5]?.desc },
+  ];
+
+  const before = t("automation.compare.before.items", { returnObjects: true }) as string[];
+  const after = t("automation.compare.after.items", { returnObjects: true }) as string[];
+
+  const statsTransl = t("automation.stats", { returnObjects: true }) as { label: string }[];
+  
+  const stats = [
+    { value: 100, suffix: "%", label: statsTransl[0]?.label },
+    { value: 42, suffix: "%", label: statsTransl[1]?.label },
+    { value: 31, suffix: "%", label: statsTransl[2]?.label },
+    { value: 10, suffix: "×", label: statsTransl[3]?.label },
+  ];
+
+  const dashItemsTransl = t("automation.dash.items", { returnObjects: true }) as { label: string, value: string }[];
+  const dashItemsStyles = ["text-green-400", "text-blue-400", "text-purple-400", "text-red-400"];
+  
+  const dashItems = dashItemsTransl?.map((item, i) => ({
+    label: item.label, value: item.value, color: dashItemsStyles[i]
+  }));
+
   return (
     <div className="bg-slate-950 text-white">
 
@@ -124,25 +83,25 @@ const Automation = () => {
             <FadeIn>
               <span className="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-red-600/15 text-red-400 font-semibold tracking-widest text-xs mb-8 border border-red-500/30 uppercase">
                 <Cpu className="w-3.5 h-3.5" />
-                Powered by Atlas Business Solutions
+                {t("automation.badge")}
               </span>
               <h1 className="text-5xl lg:text-7xl font-black leading-[1.05] mb-8 tracking-tight">
-                Stop Running{" "}
+                {t("automation.title1")}{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-400">
-                  Your Business.
+                  {t("automation.title2")}
                 </span>{" "}
-                Let Automation Do It.
+                {t("automation.title3")}
               </h1>
               <p className="text-xl text-slate-400 leading-relaxed mb-10 max-w-xl">
-                We have deployed AI automation infrastructure that lets Lilly's Printing do the work of a team of ten — with zero extra overhead. This is what the future of business looks like.
+                {t("automation.desc")}
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button asChild size="lg" className="bg-red-600 hover:bg-red-700 text-white h-14 px-8 text-base font-bold rounded-full">
-                  <Link to="/contact">Request Automation Consultation <ArrowRight className="ml-2 w-5 h-5" /></Link>
+                  <Link to="/contact">{t("automation.btn1")} <ArrowRight className="ml-2 w-5 h-5" /></Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="h-14 px-8 text-base font-bold rounded-full border-slate-600 text-white hover:bg-slate-800 bg-transparent">
                   <a href="https://atlasaisolutions.com" target="_blank" rel="noopener noreferrer">
-                    Visit Atlas AI Solutions <ChevronRight className="ml-1 w-5 h-5" />
+                    {t("automation.btn2")} <ChevronRight className="ml-1 w-5 h-5" />
                   </a>
                 </Button>
               </div>
@@ -155,15 +114,10 @@ const Automation = () => {
                 <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-3 h-3 rounded-full bg-red-500 animate-pulse" />
-                    <span className="text-sm text-slate-400 font-mono tracking-wider">ATLAS AI SYSTEM • LIVE</span>
+                    <span className="text-sm text-slate-400 font-mono tracking-wider">{t("automation.dash.badge")}</span>
                   </div>
                   <div className="space-y-4">
-                    {[
-                      { label: "Calls Answered by AI Agent", value: "247 today", color: "text-green-400" },
-                      { label: "Quotes Auto-Generated", value: "31 today", color: "text-blue-400" },
-                      { label: "Leads Captured", value: "18 today", color: "text-purple-400" },
-                      { label: "Revenue at Risk (Recovered)", value: "$4,200", color: "text-red-400" },
-                    ].map((item, i) => (
+                    {dashItems?.map((item, i) => (
                       <div key={i} className="flex items-center justify-between py-3 border-b border-white/5 last:border-0">
                         <span className="text-slate-400 text-sm">{item.label}</span>
                         <span className={`font-bold font-mono ${item.color}`}>{item.value}</span>
@@ -174,8 +128,8 @@ const Automation = () => {
 
                 {/* Floating Badge */}
                 <div className="absolute -top-8 -right-8 bg-red-600 text-white text-xs font-black px-4 py-3 rounded-2xl shadow-xl rotate-3">
-                  <p className="text-lg font-black">10×</p>
-                  <p className="text-red-200 font-semibold">Output</p>
+                  <p className="text-lg font-black">{t("automation.dash.floating1")}</p>
+                  <p className="text-red-200 font-semibold">{t("automation.dash.floating2")}</p>
                 </div>
               </div>
             </FadeIn>
@@ -188,16 +142,16 @@ const Automation = () => {
         <div className="container mx-auto px-6 max-w-7xl">
           <FadeIn className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-red-500 font-semibold tracking-widest uppercase text-sm mb-4 block">The Problem We Solve</span>
+              <span className="text-red-500 font-semibold tracking-widest uppercase text-sm mb-4 block">{t("automation.problem.badge")}</span>
               <h2 className="text-4xl lg:text-5xl font-black leading-tight mb-6">
-                The Capacity{" "}
-                <span className="italic text-slate-400">Paradox.</span>
+                {t("automation.problem.title")}{" "}
+                <span className="italic text-slate-400">{t("automation.problem.title_italic")}</span>
               </h2>
               <p className="text-xl text-slate-400 leading-relaxed mb-8">
-                Every growing business hits the same invisible ceiling. You're exceptional at your trade — but as you grow, you spend less time doing what you're great at and more time managing a chaotic web of missed calls, scattered leads, manual processes, and repetitive tasks.
+                {t("automation.problem.p1")}
               </p>
               <p className="text-lg text-slate-400 leading-relaxed">
-                Hiring more people is expensive, risky, and slow. We are not a marketing agency, and we are not just an IT firm. <span className="text-white font-semibold">We are your end-to-end business infrastructure partner</span> — building the technology that multiplies your output without multiplying your overhead.
+                {t("automation.problem.p2")} <span className="text-white font-semibold">{t("automation.problem.p2_highlight")}</span> {t("automation.problem.p2_end")}
               </p>
             </div>
 
@@ -205,7 +159,7 @@ const Automation = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6">
                 <h4 className="text-sm font-bold text-slate-500 uppercase tracking-widest mb-5 flex items-center gap-2">
-                  <X className="w-4 h-4 text-red-500" /> Before
+                  <X className="w-4 h-4 text-red-500" /> {t("automation.compare.before.title")}
                 </h4>
                 <ul className="space-y-4">
                   {before.map((item, i) => (
@@ -219,7 +173,7 @@ const Automation = () => {
               <div className="bg-slate-800/50 border border-green-500/20 rounded-2xl p-6 relative overflow-hidden">
                 <div className="absolute inset-0 bg-green-500/5" />
                 <h4 className="relative text-sm font-bold text-green-400 uppercase tracking-widest mb-5 flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4" /> After
+                  <CheckCircle2 className="w-4 h-4" /> {t("automation.compare.after.title")}
                 </h4>
                 <ul className="relative space-y-4">
                   {after.map((item, i) => (
@@ -258,14 +212,14 @@ const Automation = () => {
       <section className="py-28">
         <div className="container mx-auto px-6 max-w-7xl">
           <FadeIn className="text-center max-w-3xl mx-auto mb-20">
-            <span className="text-red-500 font-semibold tracking-widest uppercase text-sm mb-4 block">Our Automation Stack</span>
+            <span className="text-red-500 font-semibold tracking-widest uppercase text-sm mb-4 block">{t("automation.stack.badge")}</span>
             <h2 className="text-4xl lg:text-5xl font-black mb-6">
-              Every System Working{" "}
+              {t("automation.stack.title1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-400">
-                While You Sleep.
+                {t("automation.stack.title2")}
               </span>
             </h2>
-            <p className="text-xl text-slate-400">From first contact to final invoice — Atlas Business Solutions has automated every critical touchpoint of the business.</p>
+            <p className="text-xl text-slate-400">{t("automation.stack.desc")}</p>
           </FadeIn>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -304,23 +258,23 @@ const Automation = () => {
         </div>
         <div className="container relative z-10 mx-auto px-6 max-w-4xl text-center">
           <FadeIn>
-            <span className="text-red-500 font-semibold tracking-widest uppercase text-sm mb-6 block">Ready to Scale?</span>
+            <span className="text-red-500 font-semibold tracking-widest uppercase text-sm mb-6 block">{t("automation.cta.badge")}</span>
             <h2 className="text-5xl lg:text-7xl font-black mb-8 leading-tight">
-              Multiply Your Output.{" "}
+              {t("automation.cta.title1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">
-                Without Multiplying You.
+                {t("automation.cta.title2")}
               </span>
             </h2>
             <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-              Ask us how we can deploy the same AI and automation infrastructure for your business. Atlas Business Solutions specializes in building end-to-end systems for growth-focused companies.
+              {t("automation.cta.desc")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-red-600 hover:bg-red-700 text-white h-14 px-10 text-lg font-bold rounded-full">
-                <Link to="/contact">Book a Free Consultation <ArrowRight className="ml-2 w-5 h-5" /></Link>
+                <Link to="/contact">{t("automation.cta.btn1")} <ArrowRight className="ml-2 w-5 h-5" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="h-14 px-10 text-lg font-bold rounded-full border-slate-600 text-white hover:bg-slate-800 bg-transparent">
                 <a href="https://atlasaisolutions.com" target="_blank" rel="noopener noreferrer">
-                  Explore Atlas Solutions
+                  {t("automation.cta.btn2")}
                 </a>
               </Button>
             </div>

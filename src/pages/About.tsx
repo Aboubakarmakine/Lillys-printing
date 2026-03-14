@@ -3,81 +3,69 @@ import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { Award, Clock, ShieldCheck, Printer, Target, Star, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation();
+  
+  const statsTransl = t("about.stats", { returnObjects: true }) as string[];
+
   const stats = [
-    { value: 600, suffix: "+", label: "Happy Customers" },
-    { value: 10000, suffix: "+", label: "Completed Jobs" },
-    { value: 20, suffix: "+", label: "Years in the Market" },
-    { value: 100, suffix: "%", label: "Satisfaction Rate" },
+    { value: 600, suffix: "+", label: statsTransl[0] },
+    { value: 10000, suffix: "+", label: statsTransl[1] },
+    { value: 20, suffix: "+", label: statsTransl[2] },
+    { value: 100, suffix: "%", label: statsTransl[3] },
   ];
 
+  const valuesTransl = t("about.values.items", { returnObjects: true }) as { title: string, desc: string }[];
+  
   const values = [
     {
       icon: <Award className="w-8 h-8 text-red-600 mb-2" />,
-      title: "Uncompromising Quality",
-      description: "From premium apparel to high-end business cards, we never cut corners on the materials or the final print quality."
+      title: valuesTransl[0]?.title,
+      description: valuesTransl[0]?.desc
     },
     {
       icon: <Clock className="w-8 h-8 text-red-600 mb-2" />,
-      title: "Lightning Fast Delivery",
-      description: "We optimized our entire production workflow with automation to ensure your projects are delivered on time, every time."
+      title: valuesTransl[1]?.title,
+      description: valuesTransl[1]?.desc
     },
     {
       icon: <ShieldCheck className="w-8 h-8 text-red-600 mb-2" />,
-      title: "Enterprise Reliability",
-      description: "Trusted by over 600 businesses across Maryland and beyond to handle their most critical physical branding needs."
+      title: valuesTransl[2]?.title,
+      description: valuesTransl[2]?.desc
     }
   ];
 
   const team = [
     {
       name: "Liliana Mejía",
-      role: "CEO",
+      role: t("about.team.roles.ceo"),
       image: "/team-graphics/liliana.jpg"
     },
     {
       name: "Elizabeth",
-      role: "SALES REP",
+      role: t("about.team.roles.sales_rep"),
       image: "/team-graphics/elizabeth.jpg"
     },
     {
       name: "Lupita",
-      role: "SALES REP",
+      role: t("about.team.roles.sales_rep"),
       image: "/team-graphics/lupita.jpg"
     },
     {
       name: "Nahomy",
-      role: "SALES REPRESENTATIVE",
+      role: t("about.team.roles.sales_representative"),
       image: "/team-graphics/nahomy.jpg"
     },
     {
       name: "Sammy",
-      role: "PRODUCTION MANAGER",
+      role: t("about.team.roles.production_manager"),
       image: "/team-graphics/sammy.png"
     }
   ];
 
-  const reviews = [
-    {
-      name: "Lupita Garcia",
-      date: "January 2, 2026",
-      text: "Great customer service.. Excellent beautiful products!",
-      rating: 5
-    },
-    {
-      name: "Luke Colvin",
-      date: "December 26, 2025",
-      text: "So friendly and accommodating. Highly recommend them for any printing needs.",
-      rating: 5
-    },
-    {
-      name: "Rey#12 Vela",
-      date: "December 17, 2025",
-      text: "Absolutamente recomendable más que satisfecha con el servicio 100/100 recomendado ❤️❤️",
-      rating: 5
-    }
-  ];
+  const reviews = t("about.reviews.items", { returnObjects: true }) as { name: string, date: string, text: string, rating: number }[];
 
   return (
     <div className="bg-slate-50 selection:bg-red-600 selection:text-white">
@@ -94,14 +82,14 @@ export default function About() {
         <div className="container relative z-20 mx-auto px-4 max-w-6xl">
           <FadeIn>
             <span className="inline-block py-1 px-3 rounded-full bg-red-600/20 text-red-400 font-semibold tracking-wider text-sm mb-6 border border-red-500/30">
-              TWO DECADES OF EXCELLENCE
+              {t("about.hero.badge")}
             </span>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              We Design Your <br />
-              <span className="text-red-500">Success.</span>
+              {t("about.hero.title1")} <br />
+              <span className="text-red-500">{t("about.hero.title2")}</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 max-w-2xl leading-relaxed">
-              Founded to provide high-quality, reliable printing services for growing businesses demanding scalable, premium physical branding.
+              {t("about.hero.desc")}
             </p>
           </FadeIn>
         </div>
@@ -122,24 +110,24 @@ export default function About() {
                 <div className="absolute -bottom-8 -right-8 bg-slate-950 text-white p-8 rounded-2xl shadow-xl z-20 hidden md:block border border-slate-800">
                   <Printer className="w-10 h-10 text-red-500 mb-4" />
                   <p className="font-bold text-2xl">Annapolis, MD</p>
-                  <p className="text-slate-400">Headquarters</p>
+                  <p className="text-slate-400">{t("about.story.location")}</p>
                 </div>
               </div>
             </FadeIn>
 
             <FadeIn delay={0.2}>
               <h2 className="text-4xl pr-8 font-bold mb-8 text-slate-900 leading-tight">
-                A full-service enterprise printing partner you can trust.
+                {t("about.story.title")}
               </h2>
               <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
                 <p>
-                  Lilly’s Printing is a full-service enterprise printing company offering products and services to meet all your corporate and operational needs. From essential office products like stationery and high-end business cards to launching your brand's physical presence through professional vehicle wraps, storefront branding, bespoke logo design, and premium apparel — we are here to ensure your next project is an absolute success.
+                  {t("about.story.p1")}
                 </p>
                 <p>
-                  As a commercial printing company serving growing businesses, we understand that your printed materials represent your brand. That's why we invest in the latest printing technology, maintain strict quality control processes, and continuously optimize our operations for speed and accuracy. 
+                  {t("about.story.p2")}
                 </p>
                 <p className="font-semibold text-slate-900 border-l-4 border-red-600 pl-4 py-2 bg-slate-50">
-                  We are proud to serve businesses throughout the Maryland metro area, including Baltimore, Alexandria, Washington DC, Bethesda, and Rockville.
+                  {t("about.story.p3")}
                 </p>
               </div>
             </FadeIn>
@@ -171,9 +159,9 @@ export default function About() {
       <section className="py-24 bg-slate-50 border-b border-slate-200">
         <div className="container mx-auto px-4 max-w-7xl">
           <FadeIn className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-slate-900">Why Growing Brands Choose Us</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-slate-900">{t("about.values.title")}</h2>
             <p className="text-xl text-slate-500">
-              We combine decades of traditional craftsmanship with cutting-edge automated workflows.
+              {t("about.values.subtitle")}
             </p>
           </FadeIn>
 
@@ -199,9 +187,9 @@ export default function About() {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <FadeIn className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-red-600 font-semibold tracking-wider uppercase mb-2 block">Our People</span>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-slate-900">Meet the Team</h2>
-            <p className="text-xl text-slate-600">The dedicated professionals making sure your brand looks its absolute best.</p>
+            <span className="text-red-600 font-semibold tracking-wider uppercase mb-2 block">{t("about.team.badge")}</span>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-slate-900">{t("about.team.title")}</h2>
+            <p className="text-xl text-slate-600">{t("about.team.subtitle")}</p>
           </FadeIn>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8 items-center justify-items-center">
@@ -225,8 +213,8 @@ export default function About() {
             <div className="flex justify-center items-center gap-2 mb-4">
               {[1,2,3,4,5].map(i => <Star key={i} className="w-8 h-8 fill-yellow-400 text-yellow-400" />)}
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-slate-900">Loved by Local Businesses</h2>
-            <p className="text-xl text-slate-600">Don't just take our word for it. Here is what our clients have to say.</p>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-slate-900">{t("about.reviews.title")}</h2>
+            <p className="text-xl text-slate-600">{t("about.reviews.subtitle")}</p>
           </FadeIn>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -248,7 +236,7 @@ export default function About() {
                   <p className="text-slate-700 italic flex-grow">"{review.text}"</p>
                   <div className="mt-6 flex items-center gap-2 text-sm text-slate-500 font-medium">
                     <CheckCircle2 className="w-4 h-4 text-green-500" />
-                    Verified Google Review
+                    {t("about.reviews.verified")}
                   </div>
                 </div>
               </FadeIn>
@@ -262,16 +250,16 @@ export default function About() {
         <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(255,255,255,0.1)_25%,rgba(255,255,255,0.1)_50%,transparent_50%,transparent_75%,rgba(255,255,255,0.1)_75%,rgba(255,255,255,0.1)_100%)] bg-[length:20px_20px] opacity-10"></div>
         <div className="container relative z-10 mx-auto px-4 max-w-4xl text-center">
           <FadeIn>
-            <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight">Ready to elevate your brand's physical presence?</h2>
+            <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight">{t("about.cta.title")}</h2>
             <p className="text-xl text-red-100 mb-10 max-w-2xl mx-auto">
-              Our team of design and print experts is ready to help you with your next big project. Let's make something amazing together.
+              {t("about.cta.desc")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-white text-red-600 hover:bg-slate-100 h-14 px-8 text-lg font-bold rounded-full">
-                <Link to="/contact">Get Started Today</Link>
+                <Link to="/contact">{t("about.cta.btn1")}</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="text-red-600 hover:bg-red-500 hover:text-white border-2 border-red-500 h-14 px-8 text-lg font-bold rounded-full bg-white">
-                <Link to="/portfolio">View Our Work</Link>
+                <Link to="/portfolio">{t("about.cta.btn2")}</Link>
               </Button>
             </div>
           </FadeIn>

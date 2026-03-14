@@ -1,126 +1,566 @@
 {
-    "nav": {
-        "home": "Home",
-        "services": "Services",
-        "catalog": "Catalog",
-        "about": "About",
-        "portfolio": "Portfolio",
-        "automation": "Atlas",
-        "contact": "Contact",
-        "quote": "Request a Quote"
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "catalog": "Catalog",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "automation": "Atlas",
+    "contact": "Contact",
+    "quote": "Request a Quote"
+  },
+  "hero": {
+    "title": "Transform Your Brand with",
+    "subtitle": "Premium Printing & Digital Solutions.",
+    "description": "Elevate your business presence with expert Vehicle Wraps, Custom Apparel, and Web Design.",
+    "cta_quote": "Request a Quote",
+    "cta_services": "Explore Services",
+    "banner": "NOW OPEN IN RIVERDALE"
+  },
+  "services": {
+    "apparel": "Branded Apparel",
+    "digital": "Digital Solutions",
+    "wraps": "Vehicle Wraps",
+    "print": "Print Marketing"
+  },
+  "support": {
+    "powered_by": "Powered by",
+    "description": "Our AI-powered 24/7 automation ensures you always have access to speed, support, and status updates.",
+    "quote_requests": "Instant Quote Requests",
+    "quote_desc": "Get pricing estimates for your projects in seconds.",
+    "order_tracking": "Order Tracking",
+    "tracking_desc": "Monitor your order status from production to delivery.",
+    "inquiries": "Customer Inquiries",
+    "inquiries_desc": "Get answers to your questions anytime, day or night.",
+    "lead_capture": "Lead Capture",
+    "lead_desc": "Express interest and our team will follow up promptly."
+  },
+  "footer": {
+    "services": "Services",
+    "contact": "Contact Us",
+    "hours": "Mon–Fri: 8AM – 6PM",
+    "hours_sat": "Sat: 9AM – 2PM",
+    "quick_links": "Quick Links",
+    "rights": "© 2026 Lilly's Printing. All rights reserved.",
+    "powered": "Powered & Optimized by"
+  },
+  "services_page": {
+    "title": "Premium Capabilities",
+    "subtitle": "Bespoke printing and digital solutions engineered for brands that demand absolute excellence.",
+    "process": "Our Methodology",
+    "benefits": "Key Advantages",
+    "get_quote": "Request Consultation",
+    "logo": {
+      "title": "Logo Design",
+      "desc": "A powerful logo is the cornerstone of your brand's identity—the definitive emblem that connects you with your audience and distinguishes you in a competitive marketplace. At Lilly's Printing, we engineer bespoke, high-impact branding solutions built on over a decade of industry expertise. Since 2010, we have cultivated a reputation for design excellence through an unwavering commitment to our clients' strategic vision. Our methodology is immersive: we analyze your underlying objectives, mission, and long-term goals to craft a sophisticated visual identity that precisely reflects your corporate DNA. Trust our dedicated design architects to deliver an iconic, enduring mark that commands attention and accelerates your business growth."
     },
-    "hero": {
-        "title": "Transform Your Brand with",
-        "subtitle": "Premium Printing & Digital Solutions.",
-        "description": "Elevate your business presence with expert Vehicle Wraps, Custom Apparel, and Web Design.",
-        "cta_quote": "Request a Quote",
-        "cta_services": "Explore Services"
+    "storefront": {
+      "title": "Storefront & Wall Wraps",
+      "desc": "While here at Lilly's Printing, we're known for our professional vehicle wraps, we also produce custom, high-quality office signage and storefront graphics tailored specifically to your business. You can depend on us to create commercial signage including exterior signs and even elevator wraps and floor wraps. Stand out in a crowded marketplace with graphics and signage and that really grab people's attention!"
     },
-    "services": {
-        "apparel": "Branded Apparel",
-        "digital": "Digital Solutions",
-        "wraps": "Vehicle Wraps",
-        "print": "Print Marketing"
+    "wraps": {
+      "title": "Custom Promotional Merchandise",
+      "desc": "Curated, high-quality promotional merchandise designed to leave a lasting impression. We provide bespoke branded goods that cultivate unparalleled brand loyalty.",
+      "process": [
+        "Premium Item Sourcing",
+        "Brand Architecture Alignment",
+        "Custom Fabrication",
+        "Quality Assurance"
+      ],
+      "benefits": [
+        "Unforgettable Brand Recall",
+        "Premium Material Selection",
+        "Scalable Procurement",
+        "Rapid Turnaround Times"
+      ]
     },
-    "support": {
-        "powered_by": "Powered by",
-        "description": "Our AI-powered 24/7 automation ensures you always have access to speed, support, and status updates.",
-        "quote_requests": "Instant Quote Requests",
-        "quote_desc": "Get pricing estimates for your projects in seconds.",
-        "order_tracking": "Order Tracking",
-        "tracking_desc": "Monitor your order status from production to delivery.",
-        "inquiries": "Customer Inquiries",
-        "inquiries_desc": "Get answers to your questions anytime, day or night.",
-        "lead_capture": "Lead Capture",
-        "lead_desc": "Express interest and our team will follow up promptly."
+    "apparel": {
+      "title": "Premium Branded Apparel",
+      "desc": "Cultivate corporate identity and team unity. We provide premium embroidery, advanced screen printing, and bespoke corporate wear built to last.",
+      "process": [
+        "Corporate Apparel Sourcing",
+        "Advanced Screen Printing",
+        "Precision Embroidery",
+        "Garment Detailing"
+      ],
+      "benefits": [
+        "Luxury Garment Selection",
+        "Fade-Resistant Inks",
+        "Scalable Fulfillment",
+        "Precision Stitching"
+      ]
     },
-    "footer": {
-        "services": "Services",
-        "contact": "Contact Us",
-        "hours": "Mon–Fri: 8AM – 6PM",
-        "hours_sat": "Sat: 9AM – 2PM"
+    "digital": {
+      "title": "Digital & Social Media Marketing",
+      "desc": "Your brand is a living ecosystem. We deliver strategic digital marketing and social media management designed to elevate your brand perception and drive measurable growth.",
+      "process": [
+        "Strategic Content Architecture",
+        "Audience Engagement Modeling",
+        "Campaign Deployment",
+        "Performance Analytics"
+      ],
+      "benefits": [
+        "Elevated Brand Perception",
+        "Targeted Demographic Reach",
+        "Maximized Conversion Rates",
+        "Measurable Digital Growth"
+      ]
     },
-    "services_page": {
-        "title": "Premium Capabilities",
-        "subtitle": "Bespoke printing and digital solutions engineered for brands that demand absolute excellence.",
-        "process": "Our Methodology",
-        "benefits": "Key Advantages",
-        "get_quote": "Request Consultation",
-        "logo": {
-            "title": "Logo Design",
-            "desc": "A powerful logo is the cornerstone of your brand's identity—the definitive emblem that connects you with your audience and distinguishes you in a competitive marketplace. At Lilly's Printing, we engineer bespoke, high-impact branding solutions built on over a decade of industry expertise. Since 2010, we have cultivated a reputation for design excellence through an unwavering commitment to our clients' strategic vision. Our methodology is immersive: we analyze your underlying objectives, mission, and long-term goals to craft a sophisticated visual identity that precisely reflects your corporate DNA. Trust our dedicated design architects to deliver an iconic, enduring mark that commands attention and accelerates your business growth."
-        },
-        "storefront": {
-            "title": "Storefront & Wall Wraps",
-            "desc": "While here at Lilly's Printing, we're known for our professional vehicle wraps, we also produce custom, high-quality office signage and storefront graphics tailored specifically to your business. You can depend on us to create commercial signage including exterior signs and even elevator wraps and floor wraps. Stand out in a crowded marketplace with graphics and signage and that really grab people's attention!"
-        },
-        "wraps": {
-            "title": "Custom Promotional Merchandise",
-            "desc": "Curated, high-quality promotional merchandise designed to leave a lasting impression. We provide bespoke branded goods that cultivate unparalleled brand loyalty.",
-            "process": [
-                "Premium Item Sourcing",
-                "Brand Architecture Alignment",
-                "Custom Fabrication",
-                "Quality Assurance"
-            ],
-            "benefits": [
-                "Unforgettable Brand Recall",
-                "Premium Material Selection",
-                "Scalable Procurement",
-                "Rapid Turnaround Times"
-            ]
-        },
-        "apparel": {
-            "title": "Premium Branded Apparel",
-            "desc": "Cultivate corporate identity and team unity. We provide premium embroidery, advanced screen printing, and bespoke corporate wear built to last.",
-            "process": [
-                "Corporate Apparel Sourcing",
-                "Advanced Screen Printing",
-                "Precision Embroidery",
-                "Garment Detailing"
-            ],
-            "benefits": [
-                "Luxury Garment Selection",
-                "Fade-Resistant Inks",
-                "Scalable Fulfillment",
-                "Precision Stitching"
-            ]
-        },
-        "digital": {
-            "title": "Digital & Social Media Marketing",
-            "desc": "Your brand is a living ecosystem. We deliver strategic digital marketing and social media management designed to elevate your brand perception and drive measurable growth.",
-            "process": [
-                "Strategic Content Architecture",
-                "Audience Engagement Modeling",
-                "Campaign Deployment",
-                "Performance Analytics"
-            ],
-            "benefits": [
-                "Elevated Brand Perception",
-                "Targeted Demographic Reach",
-                "Maximized Conversion Rates",
-                "Measurable Digital Growth"
-            ]
-        },
-        "print": {
-            "title": "High-End Business Cards",
-            "desc": "Tangible assets crafted with absolute precision. We produce executive business cards and high-end stationery with specialty finishes that leave a definitive physical impression.",
-            "process": [
-                "Executive Design Architecture",
-                "High-Fidelity Offset Printing",
-                "Specialty Finishes (Foil, Spot UV)",
-                "Precision Cutting"
-            ],
-            "benefits": [
-                "Accelerated Production Available",
-                "Luxury Paper Stocks",
-                "Flawless Color Calibration",
-                "Direct-to-Client Distribution"
-            ]
-        },
-        "flyer": {
-            "title": "Flyer Design",
-            "desc": "Flyers have been around for years, as far as marketing is concerned. In the meantime, there have come and gone, several other types of marketing tools. But, a flyer is one of the few marketing tools, which has never gone out of trend. The reason why this ad-tool has survived all these years is its irresistible visual appeal and concise representation of messages. Lilly's Printing, a flyer design company offers attractive flyers that ensure the successful marketing of your offers, products and services in a cost-effective manner. Our expert flyer design services help you promote your business and announce events, exactly the way you want."
-        }
+    "print": {
+      "title": "High-End Business Cards",
+      "desc": "Tangible assets crafted with absolute precision. We produce executive business cards and high-end stationery with specialty finishes that leave a definitive physical impression.",
+      "process": [
+        "Executive Design Architecture",
+        "High-Fidelity Offset Printing",
+        "Specialty Finishes (Foil, Spot UV)",
+        "Precision Cutting"
+      ],
+      "benefits": [
+        "Accelerated Production Available",
+        "Luxury Paper Stocks",
+        "Flawless Color Calibration",
+        "Direct-to-Client Distribution"
+      ]
+    },
+    "flyer": {
+      "title": "Flyer Design",
+      "desc": "Flyers have been around for years, as far as marketing is concerned. In the meantime, there have come and gone, several other types of marketing tools. But, a flyer is one of the few marketing tools, which has never gone out of trend. The reason why this ad-tool has survived all these years is its irresistible visual appeal and concise representation of messages. Lilly's Printing, a flyer design company offers attractive flyers that ensure the successful marketing of your offers, products and services in a cost-effective manner. Our expert flyer design services help you promote your business and announce events, exactly the way you want."
     }
+  },
+  "home": {
+    "final_cta": {
+      "title": "Ready to Elevate Your Brand?",
+      "desc": "Partner with Lilly's Printing for enterprise-level quality that sets your business apart.",
+      "btn_consultation": "Request a Consultation",
+      "btn_order": "Start Your Order"
+    },
+    "portfolio": {
+      "title": "Featured Work",
+      "desc": "A selection of projects that showcase our capabilities.",
+      "view_all": "View Full Portfolio",
+      "projects": [
+        {
+          "title": "Premium Fleet Branding",
+          "desc": "Full commercial vehicle wraps for regional delivery fleets"
+        },
+        {
+          "title": "Enterprise Storefront",
+          "desc": "Complete exterior signage and window graphics"
+        },
+        {
+          "title": "Custom Apparel Line",
+          "desc": "High-quality screen printed and embroidered uniforms"
+        },
+        {
+          "title": "Event Marketing",
+          "desc": "Large format banners and promotional displays"
+        },
+        {
+          "title": "Corporate Identity Suite",
+          "desc": "Premium business cards, letterheads, and envelopes"
+        },
+        {
+          "title": "Promotional Catalog",
+          "desc": "Full-color printed catalogs with premium finishes"
+        }
+      ]
+    },
+    "promo": {
+      "badge": "2026 Catalog",
+      "title": "Promotional Products",
+      "desc": "Custom-branded items for events, clients, and giveaways. Starting at 100 pieces.",
+      "view_btn": "View Full Catalog",
+      "items": [
+        "Custom Notebooks",
+        "Tote Bags",
+        "Bottle Openers",
+        "Keychains",
+        "Wood Coasters",
+        "Custom Pens"
+      ]
+    },
+    "stats": {
+      "labels": [
+        "Years Experience",
+        "Orders Completed",
+        "Client Satisfaction",
+        "Rapid Turnaround"
+      ]
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "verified": "Verified Google Review",
+      "reviews": [
+        {
+          "quote": "Excellent work and very good service, I recommend them! They treated me directly and I recommend them 100%.",
+          "name": "Viridiana Cervantes",
+          "title": "Google Review"
+        },
+        {
+          "quote": "Great service and product!! Very accommodating!! Best place for your printing and wrapping needs for your company!",
+          "name": "Local SoundStage",
+          "title": "Google Review"
+        },
+        {
+          "quote": "Great art work and quick turn around time. The material used for our t-shirts is super soft. Highly recommend all their services.",
+          "name": "Anthony Lee",
+          "title": "Google Review"
+        }
+      ]
+    }
+  },
+  "about": {
+    "stats": [
+      "Happy Customers",
+      "Completed Jobs",
+      "Years in the Market",
+      "Satisfaction Rate"
+    ],
+    "hero": {
+      "badge": "TWO DECADES OF EXCELLENCE",
+      "title1": "We Design Your",
+      "title2": "Success.",
+      "desc": "Founded to provide high-quality, reliable printing services for growing businesses demanding scalable, premium physical branding."
+    },
+    "story": {
+      "location": "Headquarters",
+      "title": "A full-service enterprise printing partner you can trust.",
+      "p1": "Lilly’s Printing is a full-service enterprise printing company offering products and services to meet all your corporate and operational needs. From essential office products like stationery and high-end business cards to launching your brand's physical presence through professional vehicle wraps, storefront branding, bespoke logo design, and premium apparel — we are here to ensure your next project is an absolute success.",
+      "p2": "As a commercial printing company serving growing businesses, we understand that your printed materials represent your brand. That's why we invest in the latest printing technology, maintain strict quality control processes, and continuously optimize our operations for speed and accuracy.",
+      "p3": "We are proud to serve businesses throughout the Maryland metro area, including Baltimore, Alexandria, Washington DC, Bethesda, and Rockville."
+    },
+    "values": {
+      "title": "Why Growing Brands Choose Us",
+      "subtitle": "We combine decades of traditional craftsmanship with cutting-edge automated workflows.",
+      "items": [
+        {
+          "title": "Uncompromising Quality",
+          "desc": "From premium apparel to high-end business cards, we never cut corners on the materials or the final print quality."
+        },
+        {
+          "title": "Lightning Fast Delivery",
+          "desc": "We optimized our entire production workflow with automation to ensure your projects are delivered on time, every time."
+        },
+        {
+          "title": "Enterprise Reliability",
+          "desc": "Trusted by over 600 businesses across Maryland and beyond to handle their most critical physical branding needs."
+        }
+      ]
+    },
+    "team": {
+      "badge": "Our People",
+      "title": "Meet the Team",
+      "subtitle": "The dedicated professionals making sure your brand looks its absolute best.",
+      "roles": {
+        "ceo": "CEO",
+        "sales_rep": "SALES REP",
+        "sales_representative": "SALES REPRESENTATIVE",
+        "production_manager": "PRODUCTION MANAGER"
+      }
+    },
+    "reviews": {
+      "title": "Loved by Local Businesses",
+      "subtitle": "Don't just take our word for it. Here is what our clients have to say.",
+      "verified": "Verified Google Review",
+      "items": [
+        {
+          "name": "Lupita Garcia",
+          "date": "January 2, 2026",
+          "text": "Great customer service.. Excellent beautiful products!",
+          "rating": 5
+        },
+        {
+          "name": "Luke Colvin",
+          "date": "December 26, 2025",
+          "text": "So friendly and accommodating. Highly recommend them for any printing needs.",
+          "rating": 5
+        },
+        {
+          "name": "Rey#12 Vela",
+          "date": "December 17, 2025",
+          "text": "Absolutamente recomendable más que satisfecha con el servicio 100/100 recomendado ❤️❤️",
+          "rating": 5
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to elevate your brand's physical presence?",
+      "desc": "Our team of design and print experts is ready to help you with your next big project. Let's make something amazing together.",
+      "btn1": "Get Started Today",
+      "btn2": "View Our Work"
+    }
+  },
+  "portfolio": {
+    "header_title": "Our Portfolio",
+    "header_desc": "A showcase of our premium work across vehicle wraps, apparel, and digital solutions.",
+    "filters": [
+      "All",
+      "Vehicle Wraps",
+      "Apparel",
+      "Large Format",
+      "Digital"
+    ],
+    "projects": [
+      {
+        "title": "Commercial Van Route Wrap",
+        "category": "Vehicle Wraps",
+        "desc": "Custom-designed full van wrap for mobile service businesses."
+      },
+      {
+        "title": "Box Truck Fleet Branding",
+        "category": "Vehicle Wraps",
+        "desc": "High-visibility box truck graphic installations for local delivery fleets."
+      },
+      {
+        "title": "Custom Food Truck Wrap",
+        "category": "Vehicle Wraps",
+        "desc": "Vibrant, durable wrap solutions specifically tailored for food vending trucks."
+      },
+      {
+        "title": "High-Tech Car Graphics",
+        "category": "Vehicle Wraps",
+        "desc": "Sleek, eye-catching vehicle graphics that generate thousands of daily impressions."
+      },
+      {
+        "title": "Interior Commercial Wall Wraps",
+        "category": "Large Format",
+        "desc": "Transformative interior commercial wall graphics and visual merchandising."
+      },
+      {
+        "title": "Classic Storefront Graphics",
+        "category": "Large Format",
+        "desc": "Window graphics and illuminated signage for retail locations."
+      },
+      {
+        "title": "Business Signage Solutions",
+        "category": "Large Format",
+        "desc": "High-quality, durable signage designed to grab attention."
+      },
+      {
+        "title": "Premium Black T-Shirts",
+        "category": "Apparel",
+        "desc": "High-quality screen printing on premium cotton for maximum durability."
+      },
+      {
+        "title": "Custom Event Apparel",
+        "category": "Apparel",
+        "desc": "Vibrant, fade-resistant printed shirts perfect for corporate events."
+      },
+      {
+        "title": "Corporate Identity Branding",
+        "category": "Digital",
+        "desc": "Complete identity overhaul including logo, style guide, and digital assets."
+      },
+      {
+        "title": "Social Media Campaigns",
+        "category": "Digital",
+        "desc": "Strategic social media management designed to elevate brand perception."
+      }
+    ],
+    "cta_title": "See something you like?",
+    "cta_desc": "Let's bring your vision to life. Request a quote today and get a custom proposal for your project.",
+    "cta_btn": "Start Your Project"
+  },
+  "catalog": {
+    "title": "Promotional Products 2026",
+    "subtitle": "High-quality branded merchandise for your business. Minimum 100 pieces. Contact us for a custom quote!",
+    "btn_quote": "Request a Quote",
+    "btn_download": "Download Full Catalog (PDF)",
+    "categories": [
+      "All",
+      "Office & Stationery",
+      "Bags",
+      "Tools & Accessories",
+      "Accessories",
+      "Drinkware"
+    ],
+    "min": "Min",
+    "quote_item": "Quote",
+    "cta_title": "Ready to place an order?",
+    "cta_desc": "Call us or send a message. Our team will help you customize every item for your brand.",
+    "btn_contact": "Contact Us"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "desc": "Ready to start your next project? Get in touch with our team.",
+    "form": {
+      "name": "Name *",
+      "name_ph": "Your name",
+      "email": "Email *",
+      "email_ph": "you@company.com",
+      "phone": "Phone",
+      "phone_ph": "(443) 454-2210",
+      "company": "Company",
+      "company_ph": "Your company",
+      "msg": "Message *",
+      "msg_ph": "Tell us about your project...",
+      "submit": "Send Message",
+      "success_title": "Message Sent Successfully!",
+      "success_desc": "We'll get back to you shortly.",
+      "fail_title": "Failed to send message",
+      "fail_desc": "Please try again later or call us directly."
+    },
+    "info": {
+      "title": "Get In Touch",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Business Hours",
+      "ai_title": "24/7 AI Chat Available",
+      "ai_desc": "Need help outside business hours? Our AI assistant is available 24/7 via the chat widget in the bottom-right corner."
+    },
+    "locations": {
+      "baltimore": "Baltimore Office",
+      "arnold": "Arnold Office"
+    }
+  },
+  "automation": {
+    "badge": "Powered by Atlas Business Solutions",
+    "title1": "Stop Running",
+    "title2": "Your Business.",
+    "title3": "Let Automation Do It.",
+    "desc": "We have deployed AI automation infrastructure that lets Lilly's Printing do the work of a team of ten — with zero extra overhead. This is what the future of business looks like.",
+    "btn1": "Request Automation Consultation",
+    "btn2": "Visit Atlas AI Solutions",
+    "dash": {
+      "badge": "ATLAS AI SYSTEM • LIVE",
+      "items": [
+        {
+          "label": "Calls Answered by AI Agent",
+          "value": "247 today"
+        },
+        {
+          "label": "Quotes Auto-Generated",
+          "value": "31 today"
+        },
+        {
+          "label": "Leads Captured",
+          "value": "18 today"
+        },
+        {
+          "label": "Revenue at Risk (Recovered)",
+          "value": "$4,200"
+        }
+      ],
+      "floating1": "10×",
+      "floating2": "Output"
+    },
+    "problem": {
+      "badge": "The Problem We Solve",
+      "title": "The Capacity",
+      "title_italic": "Paradox.",
+      "p1": "Every growing business hits the same invisible ceiling. You're exceptional at your trade — but as you grow, you spend less time doing what you're great at and more time managing a chaotic web of missed calls, scattered leads, manual processes, and repetitive tasks.",
+      "p2": "Hiring more people is expensive, risky, and slow. We are not a marketing agency, and we are not just an IT firm.",
+      "p2_highlight": "We are your end-to-end business infrastructure partner",
+      "p2_end": "— building the technology that multiplies your output without multiplying your overhead."
+    },
+    "compare": {
+      "before": {
+        "title": "Before",
+        "items": [
+          "Missed calls going straight to voicemail",
+          "Manual quote processing taking days",
+          "Leads slipping through the cracks",
+          "Staff buried in repetitive admin tasks",
+          "No visibility into what's working"
+        ]
+      },
+      "after": {
+        "title": "After",
+        "items": [
+          "AI agent answers every call, 24/7",
+          "Instant, professional quotes in seconds",
+          "Every lead captured and nurtured automatically",
+          "Your team focused on what they do best",
+          "Live dashboards for full business clarity"
+        ]
+      }
+    },
+    "stats": [
+      {
+        "label": "Calls Answered"
+      },
+      {
+        "label": "Faster Response"
+      },
+      {
+        "label": "More Retained Clients"
+      },
+      {
+        "label": "Team Output Multiplier"
+      }
+    ],
+    "stack": {
+      "badge": "Our Automation Stack",
+      "title1": "Every System Working",
+      "title2": "While You Sleep.",
+      "desc": "From first contact to final invoice — Atlas Business Solutions has automated every critical touchpoint of the business.",
+      "items": [
+        {
+          "stat": "24/7",
+          "label": "ACTIVE",
+          "title": "AI Voice & Chat Agents",
+          "desc": "Intelligent AI agents that answer every call, respond to every message, book appointments, and capture leads — day or night, without a single missed opportunity."
+        },
+        {
+          "stat": "10×",
+          "label": "OUTPUT",
+          "title": "Workflow Automation",
+          "desc": "Automate your repetitive business processes from order intake, follow-ups, invoicing, and internal coordination — so your team focuses only on high-value work."
+        },
+        {
+          "stat": "<60s",
+          "label": "RESPONSE",
+          "title": "Instant Quote Processing",
+          "desc": "AI-powered quote generation that respond to project inquiries with accurate, professional estimates in seconds — accelerating your sales cycle dramatically."
+        },
+        {
+          "stat": "100%",
+          "label": "CAPTURED",
+          "title": "Lead Capture & Nurturing",
+          "desc": "Every web visitor, caller, and social inquirer is captured, tagged, and enrolled in an automated nurture sequence — turning cold leads into paying clients."
+        },
+        {
+          "stat": "0",
+          "label": "NO-SHOWS",
+          "title": "Smart Appointment Booking",
+          "desc": "AI-driven scheduling that manages your calendar, sends reminders, and handles rescheduling requests — so you never lose revenue to missed appointments."
+        },
+        {
+          "stat": "Live",
+          "label": "ANALYTICS",
+          "title": "Performance Dashboards",
+          "desc": "Real-time visibility into every automation system — leads captured, calls handled, quotes sent — so you can make smarter business decisions with clean data."
+        }
+      ]
+    },
+    "cta": {
+      "badge": "Ready to Scale?",
+      "title1": "Multiply Your Output.",
+      "title2": "Without Multiplying You.",
+      "desc": "Ask us how we can deploy the same AI and automation infrastructure for your business. Atlas Business Solutions specializes in building end-to-end systems for growth-focused companies.",
+      "btn1": "Book a Free Consultation",
+      "btn2": "Explore Atlas Solutions"
+    },
+    "timeline": {
+      "title": "Your End-to-End Business Infrastructure Partner.",
+      "phase1": {
+        "title": "The Digital Groundwork",
+        "subtitle": "(Establish & Validate)",
+        "desc": "Trust is won or lost in milliseconds. We ensure your business projects absolute authority from the very first interaction. Everything about your brand is optimized and designed to secure conversions.",
+        "badge": "Phase 1"
+      },
+      "phase2": {
+        "title": "Exponential Scaling",
+        "subtitle": "(Autonomous Digital Systems)",
+        "desc": "Manual labor doesn't scale; intelligent systems do. We integrate Atlas to respond to every message and email instantly with a human touch, giving you a 24-hour virtual team.",
+        "badge": "Phase 2"
+      },
+      "phase3": {
+        "title": "The Definitive Close",
+        "subtitle": "(Convert & Retain)",
+        "desc": "Prospects go cold when made to wait. Our infrastructure immediately captures interest, sending customized proposals and fully integrated invoices to your clients without you needing to leave your desk.",
+        "badge": "Phase 3"
+      }
+    }
+  }
 }

@@ -13,13 +13,13 @@ const Footer = () => {
               Lilly's <span className="text-primary">Printing</span>
             </h3>
             <p className="text-background/70 text-sm leading-relaxed">
-              Enterprise-level printing solutions delivered with precision and professionalism.
+              {t("home.final_cta.desc")}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-heading font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-heading font-semibold mb-4">{t("footer.quick_links")}</h4>
             <div className="space-y-2">
               {[
                 { name: t("nav.home"), path: "/" },
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-background/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-background/50">
-          <p>© {new Date().getFullYear()} Lilly's Printing. All rights reserved.</p>
+          <p>{t("footer.rights")}</p>
 
           <a
             href="https://atlasservice.co/"
@@ -77,7 +77,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity"
           >
-            <span className="text-xs uppercase tracking-wider font-medium">Powered & Optimized by</span>
+            <span className="text-xs uppercase tracking-wider font-medium">{t("footer.powered")}</span>
             <span className="font-heading font-bold text-lg text-background">Atlas.</span>
           </a>
         </div>

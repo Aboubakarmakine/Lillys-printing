@@ -10,7 +10,7 @@ const Navbar = () => {
   const { t, i18n } = useTranslation();
 
   const toggleLanguage = () => {
-    const newLang = i18n.language === "en" ? "es" : "en";
+    const newLang = i18n.language?.startsWith("en") ? "es" : "en";
     i18n.changeLanguage(newLang);
   };
 
@@ -64,7 +64,7 @@ const Navbar = () => {
             className="rounded-full hover:bg-secondary"
             aria-label="Toggle Language"
           >
-            <span className="text-xl">{i18n.language === "en" ? "🇺🇸" : "🇪🇸"}</span>
+            <span className="text-xl">{i18n.language?.startsWith("en") ? "🇺🇸" : "🇪🇸"}</span>
           </Button>
 
           <Button asChild>
@@ -80,7 +80,7 @@ const Navbar = () => {
             onClick={toggleLanguage}
             className="rounded-full hover:bg-secondary"
           >
-            <span className="text-xl">{i18n.language === "en" ? "🇺🇸" : "🇪🇸"}</span>
+            <span className="text-xl">{i18n.language?.startsWith("en") ? "🇺🇸" : "🇪🇸"}</span>
           </Button>
 
           <button
