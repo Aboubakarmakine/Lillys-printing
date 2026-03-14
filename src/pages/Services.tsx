@@ -68,7 +68,7 @@ const Services = () => {
     {
       icon: Store,
       title: t("services_page.storefront.title"),
-      image: "/car-wrapping-promo.jpg",
+      image: "/storefront_wraps.webp",
       description: t("services_page.storefront.desc"),
       linkState: "Storefront & Wall Wraps",
     },
