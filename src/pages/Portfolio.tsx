@@ -25,6 +25,9 @@ const projectImages = [
   "/portfolio-images/digital-jjv-cleaning-flyer.jpeg",
   "/portfolio-images/digital-lillys-open-flyer.jpeg",
   "/portfolio-images/digital-lillys-tiktok-flyer.jpeg",
+  "/portfolio-images/digital-services-collage-roofing.jpeg",
+  "/portfolio-images/large-format-lillys-window-graphic.jpeg",
+  "/portfolio-images/digital-services-collage-landscaping.jpeg",
 ];
 
 const Portfolio = () => {
