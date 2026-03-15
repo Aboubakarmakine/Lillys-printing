@@ -31,7 +31,17 @@ const projectImages = [
   "/portfolio-images/video-portfolio-1.mp4",
   "/portfolio-images/video-portfolio-2.mp4",
   "/portfolio-images/video-portfolio-3.mp4",
-  "/portfolio-images/video-portfolio-4.mp4"
+  "/portfolio-images/video-portfolio-4.mp4",
+  "/portfolio-images/apparel-hat-nv.jpeg",
+  "/portfolio-images/apparel-hat-storm-ready.jpeg",
+  "/portfolio-images/apparel-polo-prestige.jpeg",
+  "/portfolio-images/apparel-sleeve-tamko.jpeg",
+  "/portfolio-images/apparel-shirt-luxe.jpeg",
+  "/portfolio-images/apparel-polo-luxe.jpeg",
+  "/portfolio-images/apparel-shirt-jbc.jpeg",
+  "/portfolio-images/large-format-lillys-annapolis-wall.jpeg",
+  "/portfolio-images/digital-lillys-services-card.jpeg",
+  "/portfolio-images/digital-lillys-banner-collage.jpeg"
 ];
 
 const Portfolio = () => {
@@ -116,7 +126,9 @@ const Portfolio = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="absolute inset-0 w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-700"
+                    className={`absolute inset-0 w-full h-full object-top transform group-hover:scale-110 transition-transform duration-700 ${
+                      project.image.includes("apparel-dreaming-fence") ? "object-contain bg-secondary" : "object-cover"
+                    }`}
                   />
                 )}
 
