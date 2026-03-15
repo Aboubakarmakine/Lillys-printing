@@ -140,28 +140,28 @@
       "view_all": "View Full Portfolio",
       "projects": [
         {
-          "title": "Premium Fleet Branding",
-          "desc": "Full commercial vehicle wraps for regional delivery fleets"
+          "title": "Échate un Taco Food Truck",
+          "desc": "Full color wrap for local food truck with highly visible menus."
         },
         {
-          "title": "Enterprise Storefront",
-          "desc": "Complete exterior signage and window graphics"
+          "title": "Grey Shark Yacht Services",
+          "desc": "Eye-catching aquatic-themed van wrap for mobile detailing."
         },
         {
-          "title": "Custom Apparel Line",
-          "desc": "High-quality screen printed and embroidered uniforms"
+          "title": "Lilly's Printing Corporate Polo",
+          "desc": "Our own premium embroidered corporate polo shirts."
         },
         {
-          "title": "Event Marketing",
-          "desc": "Large format banners and promotional displays"
+          "title": "Hispanic Heritage Awards Backdrop",
+          "desc": "Step-and-repeat banner and custom red carpet backdrop for premium events."
         },
         {
-          "title": "Corporate Identity Suite",
-          "desc": "Premium business cards, letterheads, and envelopes"
+          "title": "Taqueria Pimpina Commercial Trailer",
+          "desc": "Complete commercial food trailer wrap focusing on high-definition graphics."
         },
         {
-          "title": "Promotional Catalog",
-          "desc": "Full-color printed catalogs with premium finishes"
+          "title": "JJV Cleaning Services Promotional Flyer",
+          "desc": "Custom promotional flyer design highlighting cleaning services."
         }
       ]
     },
@@ -302,9 +302,14 @@
     ],
     "projects": [
       {
-        "title": "Taqueria Pimpina Food Truck",
+        "title": "Échate un Taco Food Truck",
         "category": "Vehicle Wraps",
-        "desc": "Full color wrap for local taqueria and pupuseria food truck with high definition food graphics."
+        "desc": "Full color wrap for local food truck with highly visible menus and branding."
+      },
+      {
+        "title": "Taqueria Pimpina Trailer",
+        "category": "Vehicle Wraps",
+        "desc": "Complete commercial food trailer wrap focusing on high-definition food graphics."
       },
       {
         "title": "Storm Ready Exteriors Fleet",
@@ -312,14 +317,54 @@
         "desc": "Custom graphic and decal design for roofing and siding contractor vehicles."
       },
       {
-        "title": "Storm Ready Exteriors Hood",
+        "title": "Emmanuel JC Construction",
         "category": "Vehicle Wraps",
-        "desc": "Premium detailed vinyl cutting for the hood of contractor fleet vehicles."
+        "desc": "Professional tailgate and side panel wrap detailing services and contact info."
       },
       {
-        "title": "Taqueria Pimpina Commercial Trailer",
+        "title": "Freedom Electric Contractor",
         "category": "Vehicle Wraps",
-        "desc": "Complete commercial food trailer wrap focusing on high visibility fire aesthetics."
+        "desc": "Clean and professional fleet graphics for electrical services."
+      },
+      {
+        "title": "Grey Shark Yacht Services",
+        "category": "Vehicle Wraps",
+        "desc": "Eye-catching aquatic-themed van wrap for completely distinct mobile detailing branding."
+      },
+      {
+        "title": "Mama Minas Tropical Ice",
+        "category": "Vehicle Wraps",
+        "desc": "Vibrant, tropical-themed full trailer wrap for a mobile shaved ice business."
+      },
+      {
+        "title": "Ivania's Cleaning Services",
+        "category": "Vehicle Wraps",
+        "desc": "Eco-friendly styled partial van wrap with vivid colors and service details."
+      },
+      {
+        "title": "Contractors Apparel",
+        "category": "Apparel",
+        "desc": "Professional embroidered and printed workwear for construction teams."
+      },
+      {
+        "title": "Dreaming Fence Uniforms",
+        "category": "Apparel",
+        "desc": "High-visibility and durable custom screen printed apparel for fencing contractors."
+      },
+      {
+        "title": "Lilly's Printing Polo",
+        "category": "Apparel",
+        "desc": "Our own premium embroidered corporate polo shirts showcasing professional embroidery."
+      },
+      {
+        "title": "Potomac Custom Remodeling",
+        "category": "Apparel",
+        "desc": "Moisture-wicking athletic printed t-shirts for exterior remodeling teams."
+      },
+      {
+        "title": "JJV Cleaning Services Hoodie",
+        "category": "Apparel",
+        "desc": "Comfortable, custom-branded winter hoodies for cleaning service staff."
       },
       {
         "title": "Vesuvius Italian & Wine Bar",
@@ -334,27 +379,27 @@
       {
         "title": "Lilly's Printing Event Canopy",
         "category": "Large Format",
-        "desc": "Custom branded heavy duty 10x10 event canopy with full dye sublimation."
+        "desc": "Custom branded heavy-duty 10x10 event canopy with full dye sublimation."
       },
       {
-        "title": "Lilly's Printing Team Polo",
-        "category": "Apparel",
-        "desc": "Custom embroidered corporate polo shirts for professional staff presentation."
+        "title": "Hispanic Heritage Awards Backdrop",
+        "category": "Large Format",
+        "desc": "Step-and-repeat banner and custom red carpet backdrop for premium events."
       },
       {
-        "title": "Potomac Custom Remodeling T-shirts",
-        "category": "Apparel",
-        "desc": "Moisture-wicking athletic printed t-shirts for exterior remodeling team."
+        "title": "JJV Cleaning Services Flyer",
+        "category": "Digital",
+        "desc": "Custom promotional flyer design highlighting cleaning services and special offers."
       },
       {
-        "title": "Dreaming Fence Uniforms",
-        "category": "Apparel",
-        "desc": "Custom screen printed work apparel for local fencing business."
+        "title": "Lilly's Open Promo Flyer",
+        "category": "Digital",
+        "desc": "Digital marketing asset and flyer design for quick promotional campaigns."
       },
       {
-        "title": "Jay's Contractors Polo Selection",
-        "category": "Apparel",
-        "desc": "Premium multi-color selection of embroidered corporate team polos."
+        "title": "Lilly's Social Media Card",
+        "category": "Digital",
+        "desc": "QR-enabled promotional card designed to boost social media engagement."
       }
     ],
     "cta_title": "See something you like?",

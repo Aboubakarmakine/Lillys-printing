@@ -132,28 +132,28 @@
       "view_all": "Ver Portafolio Completo",
       "projects": [
         {
-          "title": "Marca Premium para Flotas",
-          "desc": "Rotulación comercial completa de vehículos para flotas de entrega regionales"
+          "title": "Food Truck Échate un Taco",
+          "desc": "Rotulado a todo color para food truck local con menús altamente visibles."
         },
         {
-          "title": "Fachadas Empresariales",
-          "desc": "Señalización exterior completa y gráficos para ventanas"
+          "title": "Grey Shark Yacht Services",
+          "desc": "Llamativo rotulado de camioneta con temática acuática para detallado móvil."
         },
         {
-          "title": "Línea de Ropa Personalizada",
-          "desc": "Uniformes bordados y serigrafiados de alta calidad"
+          "title": "Polo Corporativo Lilly's Printing",
+          "desc": "Nuestros propios polos corporativos bordados premium."
         },
         {
-          "title": "Marketing de Eventos",
-          "desc": "Pancartas de gran formato y exhibidores promocionales"
+          "title": "Fondo de Herencia Hispana",
+          "desc": "Pancarta 'step-and-repeat' y fondo de alfombra roja personalizado."
         },
         {
-          "title": "Suite de Identidad Corporativa",
-          "desc": "Tarjetas de presentación premium, membretes y sobres"
+          "title": "Remolque Comercial Taquería Pimpina",
+          "desc": "Rotulado completo de remolque comercial de comida con gráficos de alta definición."
         },
         {
-          "title": "Catálogo Promocional",
-          "desc": "Catálogos impresos a todo color con acabados premium"
+          "title": "Folleto Promocional JJV Cleaning Services",
+          "desc": "Diseño de folleto promocional personalizado destacando servicios de limpieza."
         }
       ]
     },
@@ -294,59 +294,104 @@
     ],
     "projects": [
       {
-        "title": "Food Truck Taquería Pimpina",
+        "title": "Food Truck Échate un Taco",
         "category": "Rotulación de Vehículos",
-        "desc": "Rotulación a todo color para food truck local de taquería y pupusería con gráficos de alta definición."
+        "desc": "Rotulado a todo color para food truck local con menús y marca altamente visibles."
+      },
+      {
+        "title": "Remolque Taquería Pimpina",
+        "category": "Rotulación de Vehículos",
+        "desc": "Rotulado completo de remolque comercial de comida con gráficos de alta definición."
       },
       {
         "title": "Flota Storm Ready Exteriors",
         "category": "Rotulación de Vehículos",
-        "desc": "Diseño de gráficos y calcomanías personalizados para vehículos de contratistas de techos y revestimientos."
+        "desc": "Diseño de gráficos y calcomanías personalizadas para vehículos de contratistas de techos."
       },
       {
-        "title": "Capó Storm Ready Exteriors",
+        "title": "Emmanuel JC Construction",
         "category": "Rotulación de Vehículos",
-        "desc": "Corte de vinilo detallado y premium para el capó de vehículos de flota de contratistas."
+        "desc": "Rotulado profesional en panel trasero y lateral que detalla servicios e información de contacto."
       },
       {
-        "title": "Remolque Comercial Taquería Pimpina",
+        "title": "Freedom Electric Contractor",
         "category": "Rotulación de Vehículos",
-        "desc": "Rotulación completa de remolque comercial de comida con un enfoque en estética de fuego de alta visibilidad."
+        "desc": "Gráficos de flota limpios y profesionales para servicios eléctricos."
       },
       {
-        "title": "Vesuvius Italian & Wine Bar",
-        "category": "Gran Formato",
-        "desc": "Señalización exterior de fachada para bar de vinos italianos de alto tráfico."
+        "title": "Grey Shark Yacht Services",
+        "category": "Rotulación de Vehículos",
+        "desc": "Llamativo rotulado de camioneta con temática acuática para una marca de detallado móvil."
       },
       {
-        "title": "Soluciones Toro Contracting",
-        "category": "Gran Formato",
-        "desc": "Letrero promocional para exteriores impreso a medida de alta calidad."
+        "title": "Mama Minas Tropical Ice",
+        "category": "Rotulación de Vehículos",
+        "desc": "Rotulado completo de remolque vibrante y tropical para negocio móvil de hielo raspado."
       },
       {
-        "title": "Carpa para Eventos Lilly's Printing",
-        "category": "Gran Formato",
-        "desc": "Carpa para eventos resistente de 10x10 con marca personalizada y sublimación completa de tinte."
+        "title": "Ivania's Cleaning Services",
+        "category": "Rotulación de Vehículos",
+        "desc": "Rotulado parcial de camioneta con estilo ecológico, colores vivos y detalles de servicios."
       },
       {
-        "title": "Polo del Equipo Lilly's Printing",
+        "title": "Ropa para Contratistas",
         "category": "Ropa",
-        "desc": "Polos corporativos bordados a medida para presentación profesional del personal."
-      },
-      {
-        "title": "Camisetas Potomac Custom Remodeling",
-        "category": "Ropa",
-        "desc": "Camisetas deportivas impresas que absorben la humedad para equipo de remodelación exterior."
+        "desc": "Ropa de trabajo profesional bordada e impresa para equipos de construcción."
       },
       {
         "title": "Uniformes Dreaming Fence",
         "category": "Ropa",
-        "desc": "Ropa de trabajo serigrafiada a medida para empresa local de cercas."
+        "desc": "Ropa de alta visibilidad, duradera e impresa en serigrafía para contratistas de cercas."
       },
       {
-        "title": "Selección de Polos Jay's Contractors",
+        "title": "Polos de Lilly's Printing",
         "category": "Ropa",
-        "desc": "Selección multicolor premium de polos de equipo corporativo bordados."
+        "desc": "Nuestos propios polos corporativos premium demostrando bordado profesional."
+      },
+      {
+        "title": "Potomac Custom Remodeling",
+        "category": "Ropa",
+        "desc": "Camisetas impresas deportivas y transpirables para equipos de remodelación de exteriores."
+      },
+      {
+        "title": "Sudadera JJV Cleaning Services",
+        "category": "Ropa",
+        "desc": "Sudaderas de invierno cómodas y de marca personalizada para el personal de limpieza."
+      },
+      {
+        "title": "Vesuvius Italian & Wine Bar",
+        "category": "Gran Formato",
+        "desc": "Señalización exterior de tienda para bar de vinos italianos de alto tráfico."
+      },
+      {
+        "title": "Toro Contracting Solutions",
+        "category": "Gran Formato",
+        "desc": "Letrero promocional para exteriores impreso a medida y de alta calidad."
+      },
+      {
+        "title": "Toldo para Eventos de Lilly's Printing",
+        "category": "Gran Formato",
+        "desc": "Toldo para eventos 10x10 con marca personalizada y sublimación completa de tinte."
+      },
+      {
+        "title": "Fondo de Herencia Hispana",
+        "category": "Gran Formato",
+        "desc": "Pancarta 'step-and-repeat' y fondo de alfombra roja personalizado para eventos premium."
+      },
+      {
+        "title": "Folleto de JJV Cleaning Services",
+        "category": "Digital",
+        "desc": "Diseño de folleto promocional personalizado destacando servicios de limpieza y ofertas especiales."
+      },
+      {
+        "title": "Folleto de Promoción de Lilly's",
+        "category": "Digital",
+        "desc": "Activo de marketing digital y diseño de folleto para campañas promocionales rápidas."
+      },
+      {
+        "title": "Tarjeta de Redes Sociales de Lilly's",
+        "category": "Digital",
+        "desc": "Tarjeta promocional con código QR diseñada para aumentar la interacción en redes sociales."
       }
     ],
     "cta_title": "¿Ves algo que te gusta?",

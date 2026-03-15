@@ -4,12 +4,12 @@ import FadeIn from "@/components/FadeIn";
 import { useTranslation } from "react-i18next";
 
 const projectImages = [
-  "/portfolio-images/wrap-truck-storm-ready.jpeg",
-  "/portfolio-images/large-format-storefront-vesuvius.jpeg",
+  "/portfolio-images/wrap-food-truck-echate-side.jpeg",
+  "/portfolio-images/wrap-van-grey-shark-side.jpeg",
   "/portfolio-images/apparel-lillys-polo.jpeg",
-  "/portfolio-images/large-format-lillys-canopy.jpeg",
-  "/portfolio-images/apparel-potomac-remodeling-front.jpeg",
-  "/portfolio-images/wrap-food-truck-pimpina.jpeg"
+  "/portfolio-images/large-format-hispanic-heritage-backdrop.jpeg",
+  "/portfolio-images/wrap-food-truck-pimpina.jpeg",
+  "/portfolio-images/digital-jjv-cleaning-flyer.jpeg"
 ];
 
 const PortfolioPreview = () => {

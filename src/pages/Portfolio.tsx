@@ -5,17 +5,26 @@ import FadeIn from "@/components/FadeIn";
 import { useTranslation } from "react-i18next";
 
 const projectImages = [
+  "/portfolio-images/wrap-food-truck-echate-side.jpeg",
   "/portfolio-images/wrap-food-truck-pimpina.jpeg",
   "/portfolio-images/wrap-truck-storm-ready.jpeg",
-  "/portfolio-images/wrap-truck-storm-ready-hood.jpeg",
-  "/portfolio-images/wrap-food-truck-pimpina-back.jpeg",
+  "/portfolio-images/wrap-truck-emmanuel-jc-back.jpeg",
+  "/portfolio-images/wrap-truck-freedom-electric-side.jpeg",
+  "/portfolio-images/wrap-van-grey-shark-side.jpeg",
+  "/portfolio-images/wrap-trailer-mama-minas-side.jpeg",
+  "/portfolio-images/wrap-van-ivanias-cleaning.jpeg",
+  "/portfolio-images/apparel-contractors.jpeg",
+  "/portfolio-images/apparel-dreaming-fence.jpeg",
+  "/portfolio-images/apparel-lillys-polo.jpeg",
+  "/portfolio-images/apparel-potomac-remodeling-front.jpeg",
+  "/portfolio-images/apparel-jv-cleaning-hoodie.jpeg",
   "/portfolio-images/large-format-storefront-vesuvius.jpeg",
   "/portfolio-images/large-format-toro-contracting.jpeg",
   "/portfolio-images/large-format-lillys-canopy.jpeg",
-  "/portfolio-images/apparel-lillys-polo.jpeg",
-  "/portfolio-images/apparel-potomac-remodeling-front.jpeg",
-  "/portfolio-images/apparel-dreaming-fence.jpeg",
-  "/portfolio-images/apparel-contractors.jpeg",
+  "/portfolio-images/large-format-hispanic-heritage-backdrop.jpeg",
+  "/portfolio-images/digital-jjv-cleaning-flyer.jpeg",
+  "/portfolio-images/digital-lillys-open-flyer.jpeg",
+  "/portfolio-images/digital-lillys-tiktok-flyer.jpeg",
 ];
 
 const Portfolio = () => {
@@ -39,7 +48,7 @@ const Portfolio = () => {
   
   const projects = projectsTransl.map((p, i) => ({
     title: p.title,
-    categoryKey: categoriesMap.includes(p.category) ? p.category : ["Vehicle Wraps", "Vehicle Wraps", "Vehicle Wraps", "Vehicle Wraps", "Large Format", "Large Format", "Large Format", "Apparel", "Apparel", "Apparel", "Apparel"][i], // map hardcoded
+    categoryKey: categoriesMap.includes(p.category) ? p.category : "Vehicle Wraps",
     categoryDisplay: p.category,
     description: p.desc,
     image: projectImages[i]
