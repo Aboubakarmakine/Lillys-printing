@@ -76,6 +76,9 @@ const GrandOpeningPopup = () => {
           <div className="relative w-[110%] md:w-full max-w-2xl transform -skew-x-[15deg] bg-primary shadow-xl p-4 md:p-8 flex flex-col items-center justify-center shrink-0 border-b-8 border-red-800">
             {/* Inner text container skewed back so text is normal */}
             <div className="transform skew-x-[15deg] flex flex-col items-center z-20">
+              <span className="text-white font-bold tracking-[0.3em] text-sm md:text-xl mb-1 md:mb-3 drop-shadow-md uppercase">
+                {t("grand_opening_subtitle", "NOW IN RIVERDALE")}
+              </span>
               <h2 className="text-4xl sm:text-5xl md:text-7xl font-sans font-black tracking-tighter uppercase drop-shadow-md leading-none">
                 <span className="text-yellow-400 block mb-1 md:mb-2">{t("grand_opening_title_part1", "GRAND")}</span>
                 <span className="text-white block">{t("grand_opening_title_part2", "OPENING")}</span>
@@ -111,8 +114,8 @@ const GrandOpeningPopup = () => {
           </div>
           
           {/* Optional subtext below the CTA */}
-          <p className="mt-4 text-black font-semibold text-sm sm:text-base max-w-sm drop-shadow-sm z-20 px-8">
-            {t("grand_opening_desc", "Celebrate our grand opening with exclusive discounts on your next printing project.")}
+          <p className="mt-4 text-black font-bold text-base sm:text-lg max-w-sm drop-shadow-sm z-20 px-8 bg-white/50 py-1 rounded-full backdrop-blur-sm shadow-sm border border-white/40">
+            {t("grand_opening_desc", "Grand opening now in RiverDale!")}
           </p>
         </div>
         
