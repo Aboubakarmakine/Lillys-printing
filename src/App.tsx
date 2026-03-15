@@ -16,6 +16,8 @@ import Contact from "./pages/Contact";
 import Automation from "./pages/Automation";
 import NotFound from "./pages/NotFound";
 
+import GrandOpeningPopup from "./components/GrandOpeningPopup";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -37,6 +39,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
+        <GrandOpeningPopup />
         <AtlasBadge />
         <ChatWidget />
       </BrowserRouter>
