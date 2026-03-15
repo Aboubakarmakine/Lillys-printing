@@ -33,8 +33,10 @@ const GrandOpeningPopup = () => {
         onClick={handleClose}
       />
       
-      {/* Main Popup Container based on the yellow/red example */}
-      <div className="relative w-full max-w-3xl aspect-[16/9] sm:aspect-auto sm:h-[450px] bg-gradient-to-br from-yellow-400 via-yellow-500 to-orange-400 rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-500">
+      {/* Floating Wrapper */}
+      <div className="w-full max-w-3xl animate-float">
+        {/* Main Popup Container based on the yellow/red example */}
+        <div className="relative w-full aspect-[16/9] sm:aspect-auto sm:h-[450px] bg-gradient-to-br from-yellow-400 via-yellow-500 to-orange-400 rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-500">
         
         {/* Background decorative elements (dots, crosses) */}
         <div className="absolute inset-0 opacity-20 pointer-events-none">
@@ -87,7 +89,7 @@ const GrandOpeningPopup = () => {
             
             {/* Left Circular Badge overlaying the red banner */}
             <div className="absolute -left-4 sm:-left-12 top-1/2 -translate-y-1/2 transform skew-x-[15deg] z-30">
-              <div className="w-24 h-24 sm:w-32 sm:h-32 bg-primary rounded-full border-4 sm:border-8 border-white shadow-lg flex flex-col items-center justify-center shadow-black/30 p-2">
+              <div className="w-24 h-24 sm:w-32 sm:h-32 bg-primary rounded-full border-4 sm:border-8 border-white shadow-lg flex flex-col items-center justify-center shadow-black/30 p-2 animate-wiggle hover:scale-110 transition-transform cursor-pointer">
                 <span className="text-white font-black uppercase text-center leading-tight text-sm sm:text-xl drop-shadow-md">
                   {t("grand_opening_badge1", "BIG")}
                 </span>
@@ -104,13 +106,15 @@ const GrandOpeningPopup = () => {
           
           {/* Small white box below banner: "STAY TUNED!" or CTA text */}
           <div className="mt-8 z-20">
-            <Link 
-              to="/catalog" 
+            <a 
+              href="https://catalog.companycasuals.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={handleClose}
               className="px-6 py-2 sm:px-10 sm:py-3 bg-white text-primary uppercase font-black tracking-widest text-sm sm:text-xl rounded shadow-lg hover:scale-105 active:scale-95 transition-transform inline-block box-border border-b-4 border-gray-300"
             >
               {t("grand_opening_cta", "SHOP NOW!")}
-            </Link>
+            </a>
           </div>
           
           {/* Optional subtext below the CTA */}
@@ -119,6 +123,7 @@ const GrandOpeningPopup = () => {
           </p>
         </div>
         
+        </div>
       </div>
     </div>
   );
