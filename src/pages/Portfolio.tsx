@@ -103,7 +103,7 @@ const Portfolio = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                  className="absolute inset-0 w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-700"
                 />
 
                 {/* Overlay */}
