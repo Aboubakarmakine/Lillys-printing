@@ -115,7 +115,7 @@ const GrandOpeningPopup = () => {
           
           {/* Optional subtext below the CTA */}
           <p className="mt-4 text-black font-bold text-base sm:text-lg max-w-sm drop-shadow-sm z-20 px-8 bg-white/50 py-1 rounded-full backdrop-blur-sm shadow-sm border border-white/40">
-            {t("grand_opening_desc", "Grand opening now in RiverDale!")}
+            {t("grand_opening_desc", "Grand opening now in Riverdale Md!")}
           </p>
         </div>
         
