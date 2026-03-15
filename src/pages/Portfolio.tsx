@@ -5,17 +5,17 @@ import FadeIn from "@/components/FadeIn";
 import { useTranslation } from "react-i18next";
 
 const projectImages = [
-  "/van-wrap-1.jpg",
-  "/truck-1.jpg",
-  "/food-truck-1.jpg",
-  "/car-wrapping-hi-tech.jpg",
-  "/wall-wraps.jpg",
-  "/Storefront-Wall-Wraps.jpg",
-  "/lillys-printing-service.jpg",
-  "/T-SHIRT-31-3.jpg",
-  "/custom-t-shirt-9.jpg",
-  "/branding.jpg",
-  "/social-media-2.jpg",
+  "/portfolio-images/wrap-food-truck-pimpina.jpeg",
+  "/portfolio-images/wrap-truck-storm-ready.jpeg",
+  "/portfolio-images/wrap-truck-storm-ready-hood.jpeg",
+  "/portfolio-images/wrap-food-truck-pimpina-back.jpeg",
+  "/portfolio-images/large-format-storefront-vesuvius.jpeg",
+  "/portfolio-images/large-format-toro-contracting.jpeg",
+  "/portfolio-images/large-format-lillys-canopy.jpeg",
+  "/portfolio-images/apparel-lillys-polo.jpeg",
+  "/portfolio-images/apparel-potomac-remodeling-front.jpeg",
+  "/portfolio-images/apparel-dreaming-fence.jpeg",
+  "/portfolio-images/apparel-contractors.jpeg",
 ];
 
 const Portfolio = () => {
@@ -39,7 +39,7 @@ const Portfolio = () => {
   
   const projects = projectsTransl.map((p, i) => ({
     title: p.title,
-    categoryKey: categoriesMap.includes(p.category) ? p.category : ["Vehicle Wraps", "Vehicle Wraps", "Vehicle Wraps", "Vehicle Wraps", "Large Format", "Large Format", "Large Format", "Apparel", "Apparel", "Digital", "Digital"][i], // map hardcoded
+    categoryKey: categoriesMap.includes(p.category) ? p.category : ["Vehicle Wraps", "Vehicle Wraps", "Vehicle Wraps", "Vehicle Wraps", "Large Format", "Large Format", "Large Format", "Apparel", "Apparel", "Apparel", "Apparel"][i], // map hardcoded
     categoryDisplay: p.category,
     description: p.desc,
     image: projectImages[i]

@@ -4,12 +4,12 @@ import FadeIn from "@/components/FadeIn";
 import { useTranslation } from "react-i18next";
 
 const projectImages = [
-  "/ai_fleet_wrap.png",
-  "/ai_storefront_signage.png",
-  "/ai_apparel.png",
-  "/ai_event_marketing.png",
-  "/ai_corporate_identity.png",
-  "/ai_catalog.png"
+  "/portfolio-images/wrap-truck-storm-ready.jpeg",
+  "/portfolio-images/large-format-storefront-vesuvius.jpeg",
+  "/portfolio-images/apparel-lillys-polo.jpeg",
+  "/portfolio-images/large-format-lillys-canopy.jpeg",
+  "/portfolio-images/apparel-potomac-remodeling-front.jpeg",
+  "/portfolio-images/wrap-food-truck-pimpina.jpeg"
 ];
 
 const PortfolioPreview = () => {
