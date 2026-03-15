@@ -28,6 +28,10 @@ const projectImages = [
   "/portfolio-images/digital-services-collage-roofing.jpeg",
   "/portfolio-images/large-format-lillys-window-graphic.jpeg",
   "/portfolio-images/digital-services-collage-landscaping.jpeg",
+  "/portfolio-images/video-portfolio-1.mp4",
+  "/portfolio-images/video-portfolio-2.mp4",
+  "/portfolio-images/video-portfolio-3.mp4",
+  "/portfolio-images/video-portfolio-4.mp4"
 ];
 
 const Portfolio = () => {
@@ -99,12 +103,22 @@ const Portfolio = () => {
           {filteredProjects.map((project, i) => (
             <FadeIn key={project.title} delay={i * 0.1}>
               <div className="group relative rounded-xl overflow-hidden shadow-md bg-secondary aspect-[4/3] cursor-pointer">
-                {/* Image */}
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="absolute inset-0 w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-700"
-                />
+                {project.image.endsWith('.mp4') ? (
+                  <video
+                    src={project.image}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-700"
+                  />
+                ) : (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="absolute inset-0 w-full h-full object-cover object-top transform group-hover:scale-110 transition-transform duration-700"
+                  />
+                )}
 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center">

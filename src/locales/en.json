@@ -415,6 +415,26 @@
         "title": "Landscaping Marketing Collage",
         "category": "Digital",
         "desc": "Comprehensive digital promotional collage featuring wraps, uniforms, and yard signs tailored for landscapers."
+      },
+      {
+        "title": "Vehicle Wrap Video Feature 1",
+        "category": "Vehicle Wraps",
+        "desc": "High quality video walkaround of our premium vehicle wrap installation."
+      },
+      {
+        "title": "Vehicle Wrap Video Feature 2",
+        "category": "Vehicle Wraps",
+        "desc": "Detailed video showcasing our professional wrap finishes and graphics."
+      },
+      {
+        "title": "Vehicle Wrap Video Feature 3",
+        "category": "Vehicle Wraps",
+        "desc": "Dynamic video display of our commercial fleet branding capabilities."
+      },
+      {
+        "title": "Custom Apparel Video Showcase",
+        "category": "Apparel",
+        "desc": "Behind the scenes look at our high-quality custom apparel printing."
       }
     ],
     "cta_title": "See something you like?",

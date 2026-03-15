@@ -407,6 +407,26 @@
         "title": "Folleto Digital para Paisajistas",
         "category": "Digital",
         "desc": "Folleto promocional digital completo con rotulación, uniformes y letreros para empresas de paisajismo."
+      },
+      {
+        "title": "Video Destacado de Rotulación 1",
+        "category": "Rotulación de Vehículos",
+        "desc": "Video demostrativo de alta calidad de nuestra instalación de rotulación de vehículos."
+      },
+      {
+        "title": "Video Destacado de Rotulación 2",
+        "category": "Rotulación de Vehículos",
+        "desc": "Video detallado que muestra nuestros acabados profesionales y gráficos en rotulación."
+      },
+      {
+        "title": "Video Destacado de Rotulación 3",
+        "category": "Rotulación de Vehículos",
+        "desc": "Muestra en video dinámica de nuestras capacidades de marca para flotas comerciales."
+      },
+      {
+        "title": "Video Exclusivo de Ropa Personalizada",
+        "category": "Ropa",
+        "desc": "Mirada detrás de escena a nuestra impresión de ropa personalizada de alta calidad."
       }
     ],
     "cta_title": "¿Ves algo que te gusta?",
