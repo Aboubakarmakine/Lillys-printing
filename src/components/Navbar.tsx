@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2" onClick={() => window.scrollTo(0, 0)}>
-          <img src="/WhatsApp Image 2026-03-14 at 2.41.27 PM (2).jpeg" alt="WS Consulting Solution" className="h-24 w-auto object-contain" />
+          <img src="/lillys_consulting_logo_actual.png" alt="WS Consulting Solution" className="h-24 w-auto object-contain" />
         </Link>
 
         {/* Desktop */}
