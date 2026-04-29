@@ -100,7 +100,7 @@ const Automation = () => {
                   <Link to="/contact">{t("automation.btn1")} <ArrowRight className="ml-2 w-5 h-5" /></Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="h-14 px-8 text-base font-bold rounded-full border-slate-600 text-white hover:bg-slate-800 bg-transparent">
-                  <a href="https://atlasaisolutions.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://atlasservice.co/" target="_blank" rel="noopener noreferrer">
                     {t("automation.btn2")} <ChevronRight className="ml-1 w-5 h-5" />
                   </a>
                 </Button>
@@ -273,7 +273,7 @@ const Automation = () => {
                 <Link to="/contact">{t("automation.cta.btn1")} <ArrowRight className="ml-2 w-5 h-5" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="h-14 px-10 text-lg font-bold rounded-full border-slate-600 text-white hover:bg-slate-800 bg-transparent">
-                <a href="https://atlasaisolutions.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://atlasservice.co/" target="_blank" rel="noopener noreferrer">
                   {t("automation.cta.btn2")}
                 </a>
               </Button>
