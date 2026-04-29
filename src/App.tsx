@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Layout from "./components/Layout";
 import AtlasBadge from "./components/AtlasBadge";
-import ChatWidget from "./components/ChatWidget";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
 import About from "./pages/About";
@@ -41,7 +40,6 @@ const App = () => (
         </Layout>
         <GrandOpeningPopup />
         <AtlasBadge />
-        <ChatWidget />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
